@@ -1,8 +1,154 @@
-body {
-  margin: 0;
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300;400;500;700;900&display=swap");
+
+/* Reset  */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+ul[class],
+ol[class] {
   padding: 0;
 }
-.header {
-  border-color: aqua;
-  font-size: 14px;
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+ul[class] {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-white);
+}
+
+/* Global  style  */
+
+:root {
+  --color-white: #fff;
+  --color-black: #000;
+  --color-mostly-black: #252525;
+  --color-bg: #1e1e1e;
+  --color-dark-gray: #444;
+  --color-light-gray: #ccc;
+  --color-very-light-gray: #ddd;
+  --color-strong-red: #d51820;
+  --color-dark-lime: #29a643;
+  --color-green-lime: #b1ffc2;
+  --color-grayish-lime: #f3fef4;
+  --color-pale-yellow: #fff8d8;
+  --color-red-pale: #ffa3a6;
+
+  /* Font-weight */
+  --font-light: 300;
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-bold: 700;
+  --font-extra-bold: 900;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Roboto", sans-serif;
+  font-weight: var(--font-regular);
+  line-height: normal;
+  font-style: normal;
+  font-size: 16px;
+  color: var(--color-white);
+  line-height: 22px;
+}
+
+/* 
+font-family: 'Bebas Neue', sans-serif;
+*/
+
+/* Reusable  CSS  */
+
+.container {
+  max-width: 1160px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.btn {
+}
+
+/* Header  */
+
+.header__top {
+  background-color: var(--color-black);
+}
+
+.header__top-inner {
+  padding-bottom: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 31px 0;
+}
+
+.menu__list {
+  display: flex;
+}
+
+.menu__list-item {
+  padding-right: 40px;
+}
+
+.menu__list-item:last-child {
+  padding-right: 25px;
+}
+
+.menu__list-link {
+  font-size: 15px;
+}
+
+.header__content {
+  background: linear-gradient(
+      180deg,
+      rgba(32, 46, 71, 0.65) 36.53%,
+      rgba(32, 46, 71, 0.62) 57.69%,
+      rgba(32, 46, 71, 0.58) 78.84%,
+      rgba(32, 46, 71, 0) 100%
+    ),
+    url("../images/header-bg.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  min-height: 608px;
+  background-color: var(--color-bg);
 }
