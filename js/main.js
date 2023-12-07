@@ -39,7 +39,7 @@ birthDateInput.addEventListener("input", (e) => {
   birthDateMaxAgeError.hidden = true;
   birthDateMinAgeError.hidden = true;
 });
-// emaiil check
+// email check
 function validateEmail() {
   let emailInput = document.getElementById("email");
   let emailError = document.getElementById("email-error");
@@ -61,7 +61,7 @@ function validateEmail() {
 }
 let emailInput = document.getElementById("email");
 emailInput.addEventListener("input", validateEmail);
-
+// password check
 const passInput = document.querySelector("#password");
 const paswordInputErrorWithinRange = document.querySelector(
   "#paswordInputErrorWithinRange"
@@ -149,7 +149,7 @@ passInput.addEventListener("input", (e) => {
     paswordInputErrorOneOrMoreSpecial.classList.remove("success-message");
   }
 });
-
+// Active button
 function validateStep1() {
   let fullName = document.getElementById("username").value.trim();
   let birthday = document.getElementById("birthday").value.trim();
@@ -180,7 +180,7 @@ function showStep(stepNumber) {
 
   steps[stepNumber - 1].classList.add("form__step--active");
 }
-
+//  Slaider
 $(function () {
   $(".slider-blog__items").slick({
     infinite: false,
