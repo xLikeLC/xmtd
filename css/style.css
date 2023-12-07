@@ -908,7 +908,7 @@ input.invalid {
 
 .slider-blog {
   background-color: var(--color-gray-bg);
-  padding: 67px 0 72px;
+  padding: 84px 0 72px;
 }
 .slider__title {
   color: #252525;
@@ -1910,6 +1910,10 @@ input.invalid {
     padding: 7px 93px;
   }
 
+  .slider__title {
+    font-size: 24px;
+  }
+
   .form-btn--disabled {
     padding: 5px 92px;
   }
@@ -1920,8 +1924,28 @@ input.invalid {
     padding-left: 0px;
   }
 
+  .form__step-group {
+    margin-bottom: 24px;
+  }
+
+  .slider-blog {
+    padding: 46px 0 72px;
+  }
   .expertise__title {
     font-size: 36px;
+  }
+
+  .form-btn--active {
+    padding: 5px 90px;
+    font-size: 18px;
+  }
+
+  .form__step-item {
+    padding: 33px 17px 44px 13px;
+  }
+
+  .expertise__inner {
+    padding-top: 0px;
   }
 
   .expertise__descr {

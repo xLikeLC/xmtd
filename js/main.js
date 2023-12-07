@@ -209,14 +209,6 @@ $(function () {
           infinite: true,
         },
       },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          infinite: true,
-        },
-      },
     ],
   });
 
