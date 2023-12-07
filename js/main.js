@@ -1,3 +1,51 @@
+async function fetchData() {
+  const fetchData = await fetch("https://api.coinlore.net/api/tickers/");
+  const response = await fetchData.json();
+  return response.data;
+}
+
+document.addEventListener("DOMContentLoaded", function async() {
+  fetchData().then((response) => {
+    const btcResponse = response[0];
+    const ethResponse = response[1];
+    const xrpResponse = response[4];
+    const ltcResponse = response[17];
+    const bchResponse = response[18];
+    const allCoins = [
+      { ...btcResponse },
+      { ...ethResponse },
+      { ...xrpResponse },
+      { ...ltcResponse },
+      { ...bchResponse },
+    ];
+    allCoins.map((el, idx) => {
+      document.querySelectorAll(".crypto__content-item-unit")[idx].textContent =
+        el.symbol;
+      document.querySelectorAll(".crypto__content-price")[
+        idx
+      ].textContent = `$${el.price_usd}`;
+      document.querySelectorAll(".crypto__content-item-name")[idx].textContent =
+        el.name;
+      if (+el.percent_change_24h < 0) {
+        document
+          .querySelectorAll(".crypto__item-bottom")
+          [idx].children[1].classList.add("up");
+        document;
+      } else {
+        document
+          .querySelectorAll(".crypto__item-bottom")
+          [idx].children[1].classList.add("down");
+        document;
+      }
+
+      document.querySelectorAll(".crypto__item-bottom")[
+        idx
+      ].children[1].textContent = `${Math.abs(el.percent_change_24h)}%`;
+    });
+    console.log(allCoins);
+  });
+});
+
 const fullNameInput = document.querySelector("#username");
 const fullNameError = document.querySelector("#fullName-error");
 
