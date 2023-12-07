@@ -114,6 +114,21 @@ font-family: 'Bebas Neue', sans-serif;
   text-align: center;
 }
 
+.error-border {
+  border: 2px solid red;
+  border-radius: 5px;
+}
+
+.form-btn--disabled:hover {
+  background-color: var(--color-primary-green);
+  cursor: pointer;
+}
+
+.btn--active {
+  background-color: var(--color-primary-green);
+  cursor: pointer;
+}
+
 .up {
   color: var(--color-green-lime);
 }
@@ -283,12 +298,6 @@ font-family: 'Bebas Neue', sans-serif;
   background-repeat: no-repeat;
   background-position: center right;
 }
-
-/* .crypto__container {
-  background-image: url("../images/decor/0-before.png");
-  background-repeat: no-repeat;
-  background-position: left;
-} */
 
 .crypto__info {
   background-image: url("../images/decor/Intersect-desk.svg");
@@ -672,13 +681,58 @@ font-family: 'Bebas Neue', sans-serif;
   width: 50%;
 }
 
-.form__bars-line--second::before {
+.form__bars-line--50::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  border-radius: 4px;
+  left: 0;
+  top: 0;
+  background: var(--color-primary-green);
   width: 50%;
+}
+
+.form__bars-line--100::before {
+  width: 100%;
+}
+
+.form__bars-line--second::before {
+  width: 0%;
+}
+
+.form__step-input::placeholder {
+  color: #999;
+}
+
+.password-criteria--default,
+.fa-solid {
+  color: #959595;
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.error-message {
+  color: var(--color-strong-red);
+  font-size: 12px;
+}
+
+.error-mesage__img {
+  margin-right: 7px;
+}
+
+.success-message {
+  color: var(--color-primary-green);
 }
 
 .form__inner {
   display: flex;
   justify-content: space-between;
+}
+.pass-mesage__img path {
+  fill: var(--color-primary-green);
 }
 
 /* Necesita actualizate  */
@@ -739,6 +793,7 @@ font-family: 'Bebas Neue', sans-serif;
   width: 100%;
   padding: 12px 8px;
   color: var(--color-black);
+  margin-bottom: 7px;
 }
 
 .form__step-input input::placeholder {
@@ -755,6 +810,22 @@ font-family: 'Bebas Neue', sans-serif;
   margin: 0 auto;
   color: var(--color-white);
   background-color: var(--color-light-gray);
+  text-align: center;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 24px;
+  font-weight: var(--font-bold);
+  text-transform: uppercase;
+  margin-bottom: 33px;
+}
+
+.form-btn--active {
+  padding: 9px 137px;
+  border: none;
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+  color: var(--color-white);
+  background-color: var(--color-primary-green);
   text-align: center;
   font-family: "Bebas Neue", sans-serif;
   font-size: 24px;
@@ -790,6 +861,46 @@ font-family: 'Bebas Neue', sans-serif;
 }
 .form-btn__link {
   color: var(--color-strong-red);
+}
+
+.form__step-item {
+  max-width: 830px;
+  border: 1px solid #31b63b;
+  background: #f3fef4;
+  padding: 47px 39px 62px 32px;
+}
+.form__step-title {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: #3c763d;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 32px;
+}
+
+.form__step-title svg {
+  margin-right: 14px;
+}
+
+.form__step-succeseful {
+  color: #3c763d;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.form__step-img {
+  margin-right: 10px;
+}
+
+input.invalid {
+  border: 1px solid #d51820;
+  background: #fff;
 }
 
 /* Section slaider  */
@@ -1734,7 +1845,6 @@ font-family: 'Bebas Neue', sans-serif;
     background: var(--color-dark-violet);
     padding-bottom: 31px;
     position: relative;
-    caption-side: 20px;
     padding-top: 20px;
   }
   .register__title {
@@ -1772,7 +1882,6 @@ font-family: 'Bebas Neue', sans-serif;
     background: var(--color-dark-violet);
     padding-bottom: 31px;
     position: relative;
-    caption-side: 20px;
     padding-top: 43px;
   }
 
