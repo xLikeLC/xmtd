@@ -133,6 +133,16 @@ font-family: 'Bebas Neue', sans-serif;
   color: var(--color-green-lime);
 }
 
+.up-img {
+  background: url("../images/icon/up-img.svg") no-repeat;
+  width: 11px;
+  height: 11px;
+}
+.down-img {
+  background: url("../images/icon/down-img.svg") no-repeat;
+  width: 11px;
+  height: 11px;
+}
 .down {
   color: var(--color-red-pale);
 }
