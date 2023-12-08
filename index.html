@@ -118,6 +118,7 @@
                     <div class="crypto__item-bottom">
                         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="11px"
                             height="11px" viewBox="0 0 11 11" version="1.1">
+
                             <path
                                 style=" stroke:none;fill-rule:nonzero;fill:rgb(69.411765%,100%,76.078431%);fill-opacity:1;"
                                 d="M 5.5 0.917969 C 2.96875 0.917969 0.917969 2.96875 0.917969 5.5 C 0.917969 8.03125 2.96875 10.082031 5.5 10.082031 C 8.03125 10.082031 10.082031 8.03125 10.082031 5.5 C 10.082031 2.96875 8.03125 0.917969 5.5 0.917969 Z M 7.199219 6.285156 C 7.113281 6.371094 6.996094 6.417969 6.875 6.417969 C 6.753906 6.417969 6.636719 6.371094 6.550781 6.285156 L 5.5 5.230469 L 4.449219 6.285156 C 4.269531 6.464844 3.980469 6.464844 3.800781 6.285156 C 3.621094 6.105469 3.621094 5.8125 3.800781 5.632812 L 5.175781 4.257812 C 5.261719 4.171875 5.378906 4.121094 5.5 4.121094 C 5.621094 4.121094 5.738281 4.171875 5.824219 4.257812 L 7.199219 5.632812 C 7.289062 5.71875 7.335938 5.835938 7.335938 5.957031 C 7.335938 6.082031 7.289062 6.199219 7.199219 6.285156 Z M 7.199219 6.285156 " />
@@ -143,11 +144,7 @@
                     </div>
                     <h5 class="crypto__content-price">$0,6058.00</h5>
                     <div class="crypto__item-bottom">
-                        <svg width="11px" height="11px" viewBox="0 0 11 11" version="1.1">
-                            <path
-                                style=" stroke:none;fill-rule:nonzero;fill:rgb(69.411765%,100%,76.078431%);fill-opacity:1;"
-                                d="M 5.5 0.917969 C 2.96875 0.917969 0.917969 2.96875 0.917969 5.5 C 0.917969 8.03125 2.96875 10.082031 5.5 10.082031 C 8.03125 10.082031 10.082031 8.03125 10.082031 5.5 C 10.082031 2.96875 8.03125 0.917969 5.5 0.917969 Z M 7.199219 6.285156 C 7.113281 6.371094 6.996094 6.417969 6.875 6.417969 C 6.753906 6.417969 6.636719 6.371094 6.550781 6.285156 L 5.5 5.230469 L 4.449219 6.285156 C 4.269531 6.464844 3.980469 6.464844 3.800781 6.285156 C 3.621094 6.105469 3.621094 5.8125 3.800781 5.632812 L 5.175781 4.257812 C 5.261719 4.171875 5.378906 4.121094 5.5 4.121094 C 5.621094 4.121094 5.738281 4.171875 5.824219 4.257812 L 7.199219 5.632812 C 7.289062 5.71875 7.335938 5.835938 7.335938 5.957031 C 7.335938 6.082031 7.289062 6.199219 7.199219 6.285156 Z M 7.199219 6.285156 " />
-                        </svg>
+                        <div class="crypto__item-img"></div>
                         <span>4.59%</span>
                     </div>
                 </div>
@@ -175,7 +172,6 @@
                             <path
                                 style=" stroke:none;fill-rule:nonzero;fill:rgb(69.411765%,100%,76.078431%);fill-opacity:1;"
                                 d="M 5.5 0.917969 C 2.96875 0.917969 0.917969 2.96875 0.917969 5.5 C 0.917969 8.03125 2.96875 10.082031 5.5 10.082031 C 8.03125 10.082031 10.082031 8.03125 10.082031 5.5 C 10.082031 2.96875 8.03125 0.917969 5.5 0.917969 Z M 7.199219 6.285156 C 7.113281 6.371094 6.996094 6.417969 6.875 6.417969 C 6.753906 6.417969 6.636719 6.371094 6.550781 6.285156 L 5.5 5.230469 L 4.449219 6.285156 C 4.269531 6.464844 3.980469 6.464844 3.800781 6.285156 C 3.621094 6.105469 3.621094 5.8125 3.800781 5.632812 L 5.175781 4.257812 C 5.261719 4.171875 5.378906 4.121094 5.5 4.121094 C 5.621094 4.121094 5.738281 4.171875 5.824219 4.257812 L 7.199219 5.632812 C 7.289062 5.71875 7.335938 5.835938 7.335938 5.957031 C 7.335938 6.082031 7.289062 6.199219 7.199219 6.285156 Z M 7.199219 6.285156 " />
-
                         </svg>
                         <span>8.23%</span>
                     </div>
@@ -369,8 +365,7 @@
                         </div>
                         <div class="form__step-field">
                             <label class="form__step-label" for="birthday">Date of Birth:</label>
-                            <input class="form__step-input" type="date" name="birthday" id="birthday"
-                                data-date-format="dd/mm/yy" required>
+                            <input class="form__step-input" type="date" name="birthday" id="birthday" required>
                             <div id="upAgeError" hidden class="error-message">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 9"
                                     fill="none">
@@ -413,149 +408,152 @@
                         </a>
                     </p>
                 </div>
-        </div>
 
-        <div class="form__step">
-            <div class="form__bars">
-                <div class="form__bars-items">
-                    <div class="form__bars-info">
-                        <svg class="form__bars-img" width="32" height="32" viewBox="0 0 32 32" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="16" cy="16" r="13" fill="#29A642" />
-                            <circle cx="16" cy="16" r="15.5" stroke="#32AA43" />
-                            <path
-                                d="M17.4824 11.0264V21H15.5137V13.2959L13.1484 14.0479V12.4961L17.2705 11.0264H17.4824Z"
-                                fill="white" />
-                        </svg>
-                        <span>Step 1</span>
+
+                <div class="form__step">
+                    <div class="form__bars">
+                        <div class="form__bars-items">
+                            <div class="form__bars-info">
+                                <svg class="form__bars-img" width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="16" cy="16" r="13" fill="#29A642" />
+                                    <circle cx="16" cy="16" r="15.5" stroke="#32AA43" />
+                                    <path
+                                        d="M17.4824 11.0264V21H15.5137V13.2959L13.1484 14.0479V12.4961L17.2705 11.0264H17.4824Z"
+                                        fill="white" />
+                                </svg>
+                                <span>Step 1</span>
+                            </div>
+                            <div class="form__bars-line form__bars-line--100"></div>
+                        </div>
+                        <div class="form__bars-items form__bars-items-media">
+                            <div class="form__bars-info">
+                                <svg class="form__bars-img" width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="16" cy="16" r="13" fill="#29A643" />
+                                    <circle cx="16" cy="16" r="15.5" stroke="#29A642" />
+                                    <path
+                                        d="M19.4922 19.4619V21H12.6836V19.6875L15.9033 16.2354C16.2269 15.8753 16.4821 15.5586 16.6689 15.2852C16.8558 15.0072 16.9902 14.7588 17.0723 14.54C17.1589 14.3167 17.2021 14.1048 17.2021 13.9043C17.2021 13.6035 17.152 13.346 17.0518 13.1318C16.9515 12.9131 16.8034 12.7445 16.6074 12.626C16.416 12.5075 16.179 12.4482 15.8965 12.4482C15.5957 12.4482 15.3359 12.5212 15.1172 12.667C14.903 12.8128 14.7389 13.0156 14.625 13.2754C14.5156 13.5352 14.4609 13.8291 14.4609 14.1572H12.4854C12.4854 13.5648 12.6266 13.0225 12.9092 12.5303C13.1917 12.0335 13.5905 11.6393 14.1055 11.3477C14.6204 11.0514 15.2311 10.9033 15.9375 10.9033C16.6348 10.9033 17.2227 11.0173 17.7012 11.2451C18.1842 11.4684 18.5488 11.792 18.7949 12.2158C19.0456 12.6351 19.1709 13.1364 19.1709 13.7197C19.1709 14.0479 19.1185 14.3691 19.0137 14.6836C18.9089 14.9935 18.7585 15.3034 18.5625 15.6133C18.3711 15.9186 18.1387 16.2285 17.8652 16.543C17.5918 16.8574 17.2887 17.1833 16.9561 17.5205L15.2266 19.4619H19.4922Z"
+                                        fill="white" />
+                                </svg>
+                                <span>Step 2</span>
+                            </div>
+                            <div class="form__bars-line form__bars-line--50"></div>
+                        </div>
                     </div>
-                    <div class="form__bars-line form__bars-line--100"></div>
-                </div>
-                <div class="form__bars-items form__bars-items-media">
-                    <div class="form__bars-info">
-                        <svg class="form__bars-img" width="32" height="32" viewBox="0 0 32 32" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="16" cy="16" r="13" fill="#29A643" />
-                            <circle cx="16" cy="16" r="15.5" stroke="#29A642" />
-                            <path
-                                d="M19.4922 19.4619V21H12.6836V19.6875L15.9033 16.2354C16.2269 15.8753 16.4821 15.5586 16.6689 15.2852C16.8558 15.0072 16.9902 14.7588 17.0723 14.54C17.1589 14.3167 17.2021 14.1048 17.2021 13.9043C17.2021 13.6035 17.152 13.346 17.0518 13.1318C16.9515 12.9131 16.8034 12.7445 16.6074 12.626C16.416 12.5075 16.179 12.4482 15.8965 12.4482C15.5957 12.4482 15.3359 12.5212 15.1172 12.667C14.903 12.8128 14.7389 13.0156 14.625 13.2754C14.5156 13.5352 14.4609 13.8291 14.4609 14.1572H12.4854C12.4854 13.5648 12.6266 13.0225 12.9092 12.5303C13.1917 12.0335 13.5905 11.6393 14.1055 11.3477C14.6204 11.0514 15.2311 10.9033 15.9375 10.9033C16.6348 10.9033 17.2227 11.0173 17.7012 11.2451C18.1842 11.4684 18.5488 11.792 18.7949 12.2158C19.0456 12.6351 19.1709 13.1364 19.1709 13.7197C19.1709 14.0479 19.1185 14.3691 19.0137 14.6836C18.9089 14.9935 18.7585 15.3034 18.5625 15.6133C18.3711 15.9186 18.1387 16.2285 17.8652 16.543C17.5918 16.8574 17.2887 17.1833 16.9561 17.5205L15.2266 19.4619H19.4922Z"
-                                fill="white" />
-                        </svg>
-                        <span>Step 2</span>
+                    <div class="form__step-group">
+                        <div class="form__step-field form__step-items">
+                            <label class="form__step-label" for="username">Email:</label>
+                            <input class="form__step-input" type="email" name="email" id="email"
+                                placeholder="email@email.com" required>
+                            <div id="email-error" hidden class="error-message">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 9"
+                                    fill="none">
+                                    <g clip-path="url(#clip0_4805_137)">
+                                        <path
+                                            d="M4.5 9C6.98555 9 9 6.98555 9 4.5C9 2.01445 6.98555 0 4.5 0C2.01445 0 0 2.01445 0 4.5C0 6.98555 2.01445 9 4.5 9ZM4.5 6.1875C3.56836 6.1875 2.8125 5.43164 2.8125 4.5C2.8125 3.56836 3.56836 2.8125 4.5 2.8125C5.43164 2.8125 6.1875 3.56836 6.1875 4.5C6.1875 5.43164 5.43164 6.1875 4.5 6.1875Z"
+                                            fill="#D51820" />
+                                    </g>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="form__step-field">
+                            <label class="form__step-label" for="username">Password:</label>
+                            <input class="form__step-input" type="password" id="password" name="password" required>
+                            <ul class="password-criteria">
+                                <li id="paswordInputErrorWithinRange" class="password-criteria--default">
+                                    <i class="fal fa-dot-circle"></i>
+                                    8 - 15 characters
+                                </li>
+                                <li id="paswordInputErrorOneOrMoreNumbers" class="password-criteria--default">
+                                    1 or more numbers
+                                </li>
+                                <li id="paswordInputErrorOneOrMoreLowercase" class="password-criteria--default">
+                                    1 or more lower case letters
+                                </li>
+                                <li id="paswordInputErrorOneOrMoreUppercase" class="password-criteria--default">
+                                    1 or more upper case letters
+                                </li>
+                                <li id="paswordInputErrorOneOrMoreSpecial" class="password-criteria--default">
+                                    1 or more special characters (#[]()@$&*!?|,.^/\+_-)
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="form__bars-line form__bars-line--50"></div>
-                </div>
-            </div>
-            <div class="form__step-group">
-                <div class="form__step-field form__step-items">
-                    <label class="form__step-label" for="username">Email:</label>
-                    <input class="form__step-input" type="email" name="email" id="email" placeholder="email@email.com"
-                        required>
-                    <div id="email-error" hidden class="error-message">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 9" fill="none">
-                            <g clip-path="url(#clip0_4805_137)">
-                                <path
-                                    d="M4.5 9C6.98555 9 9 6.98555 9 4.5C9 2.01445 6.98555 0 4.5 0C2.01445 0 0 2.01445 0 4.5C0 6.98555 2.01445 9 4.5 9ZM4.5 6.1875C3.56836 6.1875 2.8125 5.43164 2.8125 4.5C2.8125 3.56836 3.56836 2.8125 4.5 2.8125C5.43164 2.8125 6.1875 3.56836 6.1875 4.5C6.1875 5.43164 5.43164 6.1875 4.5 6.1875Z"
-                                    fill="#D51820" />
-                            </g>
-                        </svg>
-                    </div>
-                </div>
-                <div class="form__step-field">
-                    <label class="form__step-label" for="username">Password:</label>
-                    <input class="form__step-input" type="password" id="password" name="password" required>
-                    <ul class="password-criteria">
-                        <li id="paswordInputErrorWithinRange" class="password-criteria--default">
-                            <i class="fal fa-dot-circle"></i>
-                            8 - 15 characters
-                        </li>
-                        <li id="paswordInputErrorOneOrMoreNumbers" class="password-criteria--default">
-                            1 or more numbers
-                        </li>
-                        <li id="paswordInputErrorOneOrMoreLowercase" class="password-criteria--default">
-                            1 or more lower case letters
-                        </li>
-                        <li id="paswordInputErrorOneOrMoreUppercase" class="password-criteria--default">
-                            1 or more upper case letters
-                        </li>
-                        <li id="paswordInputErrorOneOrMoreSpecial" class="password-criteria--default">
-                            1 or more special characters (#[]()@$&*!?|,.^/\+_-)
-                        </li>
-                    </ul>
-                </div>
-            </div>
 
-            <div class="form-btn">
-                <button class="btn form-btn--active " type="button" onclick="validateStep2()">
-                    Register now
-                </button>
-                <p class="form-btn__text">
-                    Don’t have an account?
-                    <a class="form-btn__demo" href="#">
-                        Create one here
-                    </a>
+                    <div class="form-btn">
+                        <button class="btn form-btn--active " type="button" onclick="validateStep2()">
+                            Register now
+                        </button>
+                        <p class="form-btn__text">
+                            Don’t have an account?
+                            <a class="form-btn__demo" href="#">
+                                Create one here
+                            </a>
 
-                </p>
-                <p class="form-btn__terms">Terms and Conditions apply <span>*</span>. To read the full
-                    T&Cs,
-                    <a class="form-btn__link" href="#">
-                        click here.
-                    </a>
-                </p>
-            </div>
-        </div>
-        <div class="form__step">
-            <div class="form__step-group">
-                <div class="form__step-items   form__step-item">
-                    <h3 class="form__step-title">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="53" height="52" viewBox="0 0 53 52" fill="none">
-                            <g clip-path="url(#clip0_4803_124)">
-                                <path
-                                    d="M26.8597 52C41.1859 52 52.7969 40.3609 52.7969 26C52.7969 11.6391 41.1859 0 26.8597 0C12.5335 0 0.922607 11.6391 0.922607 26C0.922607 40.3609 12.5335 52 26.8597 52ZM38.3085 21.2266L25.34 34.2266C24.3876 35.1813 22.8476 35.1813 21.9053 34.2266L15.4211 27.7266C14.4687 26.7719 14.4687 25.2281 15.4211 24.2836C16.3734 23.3391 17.9134 23.3289 18.8557 24.2836L23.6176 29.057L34.8638 17.7734C35.8161 16.8188 37.3562 16.8188 38.2984 17.7734C39.2407 18.7281 39.2508 20.2719 38.2984 21.2164L38.3085 21.2266Z"
-                                    fill="#31B63B" />
-                            </g>
-                            <defs>
-                                <clipPath id="clip0_4803_124">
-                                    <rect width="51.8742" height="52" fill="white" transform="translate(0.922607)" />
-                                </clipPath>
-                            </defs>
-                        </svg>
-                        Registration Successful
-                    </h3>
-
-                    <div class="form__step-succeseful">
-
-                        <p class="form__step-descr">
-                            <svg class="form__step-img" width="8" height="12" viewBox="0 0 8 12" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M6.8283 5.73716C6.9626 5.87147 7.02975 6.03051 7.02975 6.21429C7.02975 6.39807 6.9626 6.55711 6.8283 6.69141L2.0783 11.4414C1.944 11.5757 1.78496 11.6429 1.60118 11.6429C1.4174 11.6429 1.25836 11.5757 1.12406 11.4414C0.989758 11.3071 0.922607 11.1481 0.922607 10.9643V1.46429C0.922607 1.28051 0.989758 1.12147 1.12406 0.987165C1.25836 0.852864 1.4174 0.785713 1.60118 0.785713C1.78496 0.785713 1.944 0.852864 2.0783 0.987165L6.8283 5.73716Z"
-                                    fill="#3C763D" />
-                            </svg>
-                            Thank you for registering for our event with XM. You will receive an email shortly
-                            with
-                            confirmation of your registration.
+                        </p>
+                        <p class="form-btn__terms">Terms and Conditions apply <span>*</span>. To read the full
+                            T&Cs,
+                            <a class="form-btn__link" href="#">
+                                click here.
+                            </a>
                         </p>
                     </div>
                 </div>
-            </div>
+                <div class="form__step">
+                    <div class="form__step-group">
+                        <div class="form__step-items   form__step-item">
+                            <h3 class="form__step-title">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="53" height="52" viewBox="0 0 53 52"
+                                    fill="none">
+                                    <g clip-path="url(#clip0_4803_124)">
+                                        <path
+                                            d="M26.8597 52C41.1859 52 52.7969 40.3609 52.7969 26C52.7969 11.6391 41.1859 0 26.8597 0C12.5335 0 0.922607 11.6391 0.922607 26C0.922607 40.3609 12.5335 52 26.8597 52ZM38.3085 21.2266L25.34 34.2266C24.3876 35.1813 22.8476 35.1813 21.9053 34.2266L15.4211 27.7266C14.4687 26.7719 14.4687 25.2281 15.4211 24.2836C16.3734 23.3391 17.9134 23.3289 18.8557 24.2836L23.6176 29.057L34.8638 17.7734C35.8161 16.8188 37.3562 16.8188 38.2984 17.7734C39.2407 18.7281 39.2508 20.2719 38.2984 21.2164L38.3085 21.2266Z"
+                                            fill="#31B63B" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_4803_124">
+                                            <rect width="51.8742" height="52" fill="white"
+                                                transform="translate(0.922607)" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                Registration Successful
+                            </h3>
 
-            <div class="form-btn">
-                <p class="form-btn__text">
-                    Don’t have an account?
-                    <a class="form-btn__demo" href="#">
-                        Create one here
-                    </a>
-                </p>
-                <p class="form-btn__terms">Terms and Conditions apply <span>*</span>. To read the full
-                    T&Cs,
-                    <a class="form-btn__link" href="#">
-                        click here.
-                    </a>
-                </p>
-            </div>
-        </div>
-        </form>
+                            <div class="form__step-succeseful">
+
+                                <p class="form__step-descr">
+                                    <svg class="form__step-img" width="8" height="12" viewBox="0 0 8 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M6.8283 5.73716C6.9626 5.87147 7.02975 6.03051 7.02975 6.21429C7.02975 6.39807 6.9626 6.55711 6.8283 6.69141L2.0783 11.4414C1.944 11.5757 1.78496 11.6429 1.60118 11.6429C1.4174 11.6429 1.25836 11.5757 1.12406 11.4414C0.989758 11.3071 0.922607 11.1481 0.922607 10.9643V1.46429C0.922607 1.28051 0.989758 1.12147 1.12406 0.987165C1.25836 0.852864 1.4174 0.785713 1.60118 0.785713C1.78496 0.785713 1.944 0.852864 2.0783 0.987165L6.8283 5.73716Z"
+                                            fill="#3C763D" />
+                                    </svg>
+                                    Thank you for registering for our event with XM. You will receive an email shortly
+                                    with
+                                    confirmation of your registration.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-btn">
+                        <p class="form-btn__text">
+                            Don’t have an account?
+                            <a class="form-btn__demo" href="#">
+                                Create one here
+                            </a>
+                        </p>
+                        <p class="form-btn__terms">Terms and Conditions apply <span>*</span>. To read the full
+                            T&Cs,
+                            <a class="form-btn__link" href="#">
+                                click here.
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </form>
         </div>
     </section>
     <!-- Section slider-blog-->
