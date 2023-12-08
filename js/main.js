@@ -259,8 +259,4 @@ $(function () {
       },
     ],
   });
-
-  $("#birthday").on("input", function () {
-    changePlaceholderColor(this);
-  });
 });
