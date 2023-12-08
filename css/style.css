@@ -292,6 +292,7 @@ font-family: 'Bebas Neue', sans-serif;
   padding-bottom: 91px;
   position: relative;
   flex-wrap: wrap;
+  z-index: 0;
 }
 
 .crypto__content-inner::before {
@@ -302,12 +303,6 @@ font-family: 'Bebas Neue', sans-serif;
   height: 820px;
   right: 60%;
   top: 116%;
-}
-
-.crypto__content-items {
-  background-image: url("../images/decor/zero-red.png");
-  background-repeat: no-repeat;
-  background-position: center right;
 }
 
 .crypto__info {
@@ -326,7 +321,7 @@ font-family: 'Bebas Neue', sans-serif;
   border-radius: 14px;
   border: 0.954px solid rgba(167, 167, 167, 0.2);
   background: rgba(140, 140, 140, 0.1);
-  padding: 0px 11px 5px 11px;
+  padding: 0px 49px 5px 11px;
   max-width: 208px;
   z-index: 1;
 }
@@ -920,7 +915,7 @@ input.invalid {
 
 .slider-blog {
   background-color: var(--color-gray-bg);
-  padding: 84px 0 72px;
+  padding: 68px 0 72px;
 }
 .slider__title {
   color: #252525;
@@ -1065,25 +1060,21 @@ input.invalid {
 .expertise__item--security {
   background-image: url(../images/icon/security.svg);
   background-repeat: no-repeat;
-  background-position: top;
 }
 
 .expertise__item--fair {
   background-image: url(../images/icon/fair.svg);
   background-repeat: no-repeat;
-  background-position: top;
 }
 
 .expertise__item--win {
   background-image: url(../images/icon/win.svg);
   background-repeat: no-repeat;
-  background-position: top;
 }
 
 .expertise__item--support {
   background-image: url(../images/icon/support.svg);
   background-repeat: no-repeat;
-  background-position: top;
 }
 
 .expertise__item p {
@@ -1225,7 +1216,7 @@ input.invalid {
   }
 
   .crypto__content-items {
-    margin-bottom: 30px;
+    margin: 0 0px 29px 11px;
   }
 
   .crypto__info-items {
@@ -1263,6 +1254,16 @@ input.invalid {
     height: 0px;
     top: 116px;
     left: 64px;
+  }
+  .crypto__content-inner::before {
+    content: "";
+    position: absolute;
+    background-image: url("../images/decor/0-before-768.png");
+    width: 476px;
+    height: 540px;
+    right: 72%;
+    top: 74%;
+    z-index: 0;
   }
 }
 
@@ -1327,7 +1328,7 @@ input.invalid {
     width: 671px;
     height: 1346px;
     top: 0;
-    right: 0;
+    right: 5px;
     transform: translateX(13px);
   }
 
@@ -1547,7 +1548,10 @@ input.invalid {
   }
 
   .slider-blog {
-    padding: 48px 0 72px;
+    padding: 16px 0px 74px;
+  }
+  .slider-blog {
+    padding: 50px 0px 74px;
   }
 
   .slick-prev {
@@ -1630,6 +1634,7 @@ input.invalid {
     flex-direction: column;
     max-width: 100%;
     margin-bottom: 60px;
+    margin-bottom: 24px;
   }
 
   .expertise__inner {
@@ -1650,6 +1655,9 @@ input.invalid {
   }
   .expertise__inner {
     margin-top: 31px;
+  }
+  .form-btn--disabled {
+    padding: 11px 188px;
   }
 }
 
@@ -1721,6 +1729,34 @@ input.invalid {
     max-width: 232px;
     font-size: 11.5px;
     text-align: center;
+  }
+
+  .crypto__content-inner::after {
+    display: none;
+  }
+
+  .crypto {
+    position: relative;
+  }
+
+  .crypto::before {
+    content: "";
+    position: absolute;
+    background-image: url("../images/decor/zero-red.png");
+    width: 349px;
+    height: 371px;
+    left: 1%;
+    top: 1%;
+    transform: translateX(13px);
+  }
+
+  .crypto__content-inner::after {
+    background-image: url("../images/icon/line-768svg.svg");
+    width: 671px;
+    height: 1346px;
+    top: 0;
+    right: 5px;
+    transform: translateX(13px);
   }
 
   .crypto__info-items {
@@ -1855,9 +1891,8 @@ input.invalid {
   }
 
   .form-btn--disabled {
-    padding: 10px 30px;
+    padding: 11px 188px;
   }
-
   .form__bars-items-media {
     display: none;
   }
@@ -1893,7 +1928,7 @@ input.invalid {
   }
 
   .slider-blog {
-    padding: 20px 0 72px;
+    padding: 50px 0px 74px;
   }
 
   .expertise__inner {
@@ -1994,5 +2029,26 @@ input.invalid {
   }
   .expertise__inner {
     margin-bottom: 65px;
+  }
+
+  .expertise__item--security,
+  .expertise__item--fair,
+  .expertise__item--win,
+  .expertise__item--support {
+    background-position: top;
+  }
+  .form-btn--disabled {
+    padding: 11px 188px;
+  }
+
+  .crypto::before {
+    content: "";
+    position: absolute;
+    background-image: url("../images/decor/zero-red.png");
+    width: 349px;
+    height: 371px;
+    left: 6%;
+    top: -6%;
+    transform: translateX(150px);
   }
 }
