@@ -296,6 +296,10 @@ font-family: 'Bebas Neue', sans-serif;
   z-index: 0;
 }
 
+.crypto__img {
+  display: none;
+}
+
 .crypto__content-inner::before {
   content: "";
   position: absolute;
@@ -2050,9 +2054,9 @@ input.invalid {
   }
 
   .crypto__img {
+    display: block;
     content: "";
     position: absolute;
-
     width: 127px;
     height: 123px;
     right: 0;
@@ -2085,5 +2089,10 @@ input.invalid {
     margin-bottom: 55px;
     margin-left: 15px;
     margin-right: 15px;
+  }
+  .crypto__info {
+    background-image: url("../images/decor/Intersect-desk.svg");
+    background-repeat: no-repeat;
+    background-position: right;
   }
 }
