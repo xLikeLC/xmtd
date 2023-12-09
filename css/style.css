@@ -1916,7 +1916,11 @@ input.invalid {
     background: var(--color-dark-violet);
     padding-bottom: 31px;
     position: relative;
-    padding-top: 43px;
+    padding-top: 10px;
+  }
+
+  .crypto__content-inner {
+    gap: 10px;
   }
 
   .slider__title {
@@ -2033,7 +2037,7 @@ input.invalid {
   .expertise__item--support {
     background-position: top;
   }
-
+  /* 
   .crypto__content-inner-after {
     position: relative;
   }
@@ -2042,14 +2046,12 @@ input.invalid {
     content: "";
     position: absolute;
     background-image: url("../images/decor/zero-red.png");
-    width: 293px;
-    height: 371px;
-    right: 90px;
-    top: -20%;
-    transform: translateX(90px);
-  }
-
-.crypto::before 
-
-
+    background-size: 123px 146px;
+    background-repeat: no-repeat;
+    /* width: 293px; */
+  /* height: 367px; */
+  /* right: -29px;
+    top: -6%;
+    transform: translateX(386px); 
+  } */
 }
