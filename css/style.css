@@ -1539,10 +1539,6 @@ input.invalid {
     margin-bottom: 42px;
   }
 
-  .form-btn--disabled {
-    padding: 10px 70px;
-  }
-
   .slider__title {
     margin-bottom: 40px;
   }
@@ -1657,7 +1653,7 @@ input.invalid {
     margin-top: 31px;
   }
   .form-btn--disabled {
-    padding: 11px 188px;
+    padding: 9px 80px;
   }
 }
 
@@ -1739,7 +1735,7 @@ input.invalid {
     position: relative;
   }
 
-  .crypto::before {
+  /* .crypto::before {
     content: "";
     position: absolute;
     background-image: url("../images/decor/zero-red.png");
@@ -1748,7 +1744,7 @@ input.invalid {
     left: 1%;
     top: 1%;
     transform: translateX(13px);
-  }
+  } */
 
   .crypto__content-inner::after {
     background-image: url("../images/icon/line-768svg.svg");
@@ -2037,18 +2033,23 @@ input.invalid {
   .expertise__item--support {
     background-position: top;
   }
-  .form-btn--disabled {
-    padding: 11px 188px;
+
+  .crypto__content-inner-after {
+    position: relative;
   }
 
-  .crypto::before {
+  .crypto__content-inner-after::before {
     content: "";
     position: absolute;
     background-image: url("../images/decor/zero-red.png");
-    width: 349px;
+    width: 293px;
     height: 371px;
-    left: 6%;
-    top: -6%;
-    transform: translateX(150px);
+    right: 90px;
+    top: -20%;
+    transform: translateX(90px);
   }
+
+.crypto::before 
+
+
 }
