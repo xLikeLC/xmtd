@@ -65,23 +65,17 @@ fullNameInput.addEventListener("input", (e) => {
   fullNameError.hidden = isValid;
 
   if (e.target.value.trim() !== "") {
-    btnFirst.classList.add("form-btn--success");
     inputUsername.classList.toggle("form__step-input--error", !isValid);
-    inputUsername.classList.toggle("form__stept-input--success", isValid);
-    document
-      .querySelector(".form__bars-line--first")
-      .classList.toggle("form__bars--success", isValid);
+    inputUsername.classList.toggle("form__step-input--success", isValid);
   } else {
     btnFirst.classList.remove("form-btn--success");
-    inputUsername.classList.remove("form__stept-input--success");
+    inputUsername.classList.remove("form__step-input--success");
     inputUsername.classList.remove("form__step-input--error");
-    document
-      .querySelector(".form__bars-line--first")
-      .classList.remove("form__bars--success");
   }
 });
 
 const validateFullNameField = (name) => /^([a-zA-Z]+\s?)+$/.test(name);
+
 const validateBirthDateField = (value) => {
   const date = new Date(value);
   const currentDate = new Date();
@@ -98,32 +92,31 @@ const validateBirthDateField = (value) => {
 const birthDateInput = document.querySelector("#birthday");
 const birthDateMaxAgeError = document.querySelector("#upAgeError");
 const birthDateMinAgeError = document.querySelector("#downAgeError");
+const inputBirthday = document.querySelector(".form__step-input--birthday");
+const btnStep = document.querySelector(".btn-next");
+const stepBars = document.querySelector(".form__bars-line--first");
 
 birthDateInput.addEventListener("input", (e) => {
   const { maxAge, minAge } = validateBirthDateField(e.target.value);
-  if (e.target.value !== "") {
-    document
-      .querySelector(".form__bars-line--first")
-      .classList.add("form__bars--success");
-  }
 
   birthDateMaxAgeError.hidden = true;
   birthDateMinAgeError.hidden = true;
   if (maxAge) {
     birthDateMaxAgeError.hidden = false;
+    inputBirthday.classList.add("form__step-input--error");
     return;
   }
   if (minAge) {
     birthDateMinAgeError.hidden = false;
+    inputBirthday.classList.add("form__step-input--error");
+    console.log(minAge);
     return;
   }
-  birthDateMaxAgeError.hidden = true;
-  birthDateMinAgeError.hidden = true;
-  if (e.target.value !== "") {
-    document
-      .querySelector(".form-btn--disabled")
-      .classList.remove("form-btn--disabled");
-  }
+
+  inputBirthday.classList.remove("form__step-input--error");
+  inputBirthday.classList.add("form__step-input--success");
+  btnStep.classList.add("form-btn--success");
+  stepBars.classList.add("form__bars--success");
 });
 
 function validateEmail() {
@@ -143,7 +136,7 @@ function validateEmail() {
     return false;
   } else {
     emailError.style.display = "none";
-    emailBorder.classList.add("form__stept-input--success");
+    emailBorder.classList.add("form__step-input--success");
     console.log(emailBorder);
     emailBorder.classList.remove("form__step-input--error");
 
@@ -272,13 +265,13 @@ passInput.addEventListener("input", (e) => {
     barsSucces.classList.add("form__bars-line--50");
     btnSucces.classList.remove("form-btn--disabled");
     btnSucces.classList.add("form-btn--success");
-    inputSucces.classList.add("form__stept-input--success");
+    inputSucces.classList.add("form__step-input--success");
     console.log(inputSucces);
   } else {
     barsSucces.classList.remove("form__bars-line--50");
     btnSucces.classList.remove("form-btn--success");
     btnSucces.classList.add("form-btn--disabled");
-    inputSucces.classList.remove("form__stept-input--success");
+    inputSucces.classList.remove("form__step-input--success");
   }
 });
 
@@ -286,7 +279,7 @@ passInput.addEventListener("input", (e) => {
 function validateStep1() {
   let fullName = document.getElementById("username").value.trim();
   let birthday = document.getElementById("birthday").value.trim();
-  console.log(new Date(birthday).getFullYear());
+  const btnStep1 = document.querySelector(".btn-next");
   let thisYear = new Date().getFullYear() - new Date(birthday).getFullYear();
   if (fullName === "" || birthday === "") {
     alert("Please complete all steps.");
@@ -296,7 +289,11 @@ function validateStep1() {
     alert("Maximum age requirements, 60 years old");
     return false;
   }
-
+  if (thisYear < 18) {
+    alert("Minimum age requirements, 18 years old");
+    return false;
+  }
+  btnStep.classList.add("form-btn--success");
   showStep(2);
 }
 
@@ -353,6 +350,7 @@ function showStep(stepNumber) {
 
   steps[stepNumber - 1].classList.add("form__step--active");
 }
+
 //  Slaider
 $(function () {
   $(".slider-blog__items").slick({
