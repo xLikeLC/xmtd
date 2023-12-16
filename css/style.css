@@ -855,7 +855,7 @@ font-family: 'Bebas Neue', sans-serif;
   border: 1px solid var(--color-strong-red);
 }
 
-.form__stept-input--success {
+.form__step-input--success {
   border: 1px solid var(--color-primary-green);
 }
 
@@ -879,6 +879,22 @@ font-family: 'Bebas Neue', sans-serif;
   font-weight: var(--font-bold);
   text-transform: uppercase;
   margin-bottom: 33px;
+}
+
+.form-btn--success {
+  padding: 9px 137px;
+  border: none;
+  display: block;
+  margin: 0 auto;
+  color: var(--color-white);
+  background-color: var(--color-primary-green);
+  text-align: center;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 24px;
+  font-weight: var(--font-bold);
+  text-transform: uppercase;
+  margin-bottom: 33px;
+  cursor: pointer;
 }
 
 .form-btn--off {
