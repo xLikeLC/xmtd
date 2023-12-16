@@ -114,13 +114,29 @@ font-family: 'Bebas Neue', sans-serif;
   text-align: center;
 }
 
-.error-border {
-  border: 2px solid red;
+/* .error-border {
+  border: 1px solid var(--color-strong-red);
   border-radius: 5px;
-}
+} */
 
-.form-btn--disabled:hover {
+/* .form-btn--disabled:hover {
   background-color: var(--color-primary-green);
+  cursor: pointer;
+} */
+
+.form-btn--success {
+  padding: 9px 137px;
+  border: none;
+  display: block;
+  margin: 0 auto;
+  color: var(--color-white);
+  background-color: var(--color-primary-green);
+  text-align: center;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 24px;
+  font-weight: var(--font-bold);
+  text-transform: uppercase;
+  margin-bottom: 33px;
   cursor: pointer;
 }
 
@@ -146,6 +162,7 @@ font-family: 'Bebas Neue', sans-serif;
 .down {
   color: var(--color-red-pale);
 }
+
 /* Header  */
 
 .header__top {
@@ -179,17 +196,15 @@ font-family: 'Bebas Neue', sans-serif;
 .header__content {
   background: linear-gradient(
       180deg,
-      rgba(32, 46, 71, 0.65) 36.53%,
-      rgba(32, 46, 71, 0.62) 57.69%,
-      rgba(32, 46, 71, 0.58) 78.84%,
-      rgba(32, 46, 71, 0) 100%
+      rgba(13, 12, 18, 0.65) 36.53%,
+      rgba(21, 17, 26, 0) 100%
     ),
     url("../images/header-bg.png");
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
-  background-color: var(--color-black);
+  background-color: var(--color-dark-violet);
   padding-bottom: 178px;
 }
 
@@ -280,7 +295,7 @@ font-family: 'Bebas Neue', sans-serif;
 .crypto {
   display: flex;
   background: var(--color-dark-violet);
-  padding-bottom: 20px;
+  padding-bottom: 23px;
   position: relative;
   padding-top: 5px;
 }
@@ -288,12 +303,25 @@ font-family: 'Bebas Neue', sans-serif;
 .crypto__content-inner {
   margin: 10px 24px 0 24px;
   display: flex;
-  gap: 20px;
+  gap: 10px;
   justify-content: space-between;
-  padding-bottom: 91px;
+  padding-bottom: 90px;
   position: relative;
   flex-wrap: wrap;
   z-index: 0;
+}
+
+.crypto__container {
+  position: relative;
+}
+
+.crypto__green {
+  content: "";
+  position: absolute;
+  width: 455px;
+  height: 783px;
+  right: -125px;
+  top: -300px;
 }
 
 .crypto__img {
@@ -306,28 +334,29 @@ font-family: 'Bebas Neue', sans-serif;
   background-image: url("../images/decor/0-before.png");
   width: 820px;
   height: 820px;
-  right: 60%;
-  top: 116%;
+  right: 69%;
+  top: 38%;
 }
 
-.crypto__info {
+/* .crypto__info {
   background-image: url("../images/decor/Intersect-desk.svg");
   background-repeat: no-repeat;
   background-position: right;
-}
+} */
 
-.crypto__info-items {
+/* .crypto__info-items {
   background-image: url("../images/decor/line-before.svg");
   background-repeat: no-repeat;
   background-position: center right;
-}
+} */
 
 .crypto__content-items {
   border-radius: 14px;
   border: 0.954px solid rgba(167, 167, 167, 0.2);
   background: rgba(140, 140, 140, 0.1);
-  padding: 0px 49px 5px 11px;
-  max-width: 208px;
+  padding: 0px 11px 7px 6px;
+  max-width: 202px;
+  width: 245px;
   z-index: 1;
 }
 
@@ -335,13 +364,13 @@ font-family: 'Bebas Neue', sans-serif;
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  margin-top: 10px;
+  margin-top: 15px;
   border-bottom: 2px solid rgba(255, 255, 255, 0.15);
-  margin-bottom: 11px;
+  margin-bottom: 10px;
 }
 
 .crypto__content-item-img {
-  margin-right: 15px;
+  margin-right: 10px;
   margin-bottom: 21px;
 }
 .crypto__content-item-name {
@@ -349,7 +378,7 @@ font-family: 'Bebas Neue', sans-serif;
   margin-bottom: 21px;
 }
 .crypto__content-item-unit {
-  margin-right: 4px;
+  margin-right: 10px;
   margin-bottom: 16px;
   display: inline-block;
 }
@@ -393,7 +422,7 @@ font-family: 'Bebas Neue', sans-serif;
   font-weight: var(--font-light);
   line-height: 43px;
   padding-bottom: 25px;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
   position: relative;
   text-align: center;
 }
@@ -407,7 +436,7 @@ font-family: 'Bebas Neue', sans-serif;
   background-image: url("../images/decor/line-before.svg");
   width: 1428px;
   height: 1570px;
-  right: 0px;
+  right: 100px;
   top: -170px;
   transform: translateX(16%);
 }
@@ -664,11 +693,12 @@ font-family: 'Bebas Neue', sans-serif;
 }
 
 .form__bars-img {
-  margin-bottom: 16px;
+  margin-bottom: 12px;
 }
 
 .form__bars-info span {
-  margin-left: 10px;
+  margin-left: 8px;
+  margin-bottom: 10px;
 }
 
 .form__bars-line {
@@ -690,7 +720,22 @@ font-family: 'Bebas Neue', sans-serif;
   background: var(--color-primary-green);
 }
 
-.form__bars-line--first::before {
+/* .form__bars-line--first::before {
+  width: 50%;
+} */
+
+.form__bars--success::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  border-radius: 4px;
+  left: 0;
+  top: 0;
+  background: var(--color-primary-green);
+  width: 50%;
+}
+
+.form__bars--success::before {
   width: 50%;
 }
 
@@ -707,10 +752,6 @@ font-family: 'Bebas Neue', sans-serif;
 
 .form__bars-line--100::before {
   width: 100%;
-}
-
-.form__bars-line--second::before {
-  width: 0%;
 }
 
 .form__step-input::placeholder {
@@ -757,7 +798,7 @@ font-family: 'Bebas Neue', sans-serif;
 
 .form {
   max-width: 1146px;
-  padding: 80px 158px;
+  padding: 85px 158px 80px 158px;
   margin: 0 auto;
 }
 
@@ -806,7 +847,16 @@ font-family: 'Bebas Neue', sans-serif;
   width: 100%;
   padding: 12px 8px;
   color: var(--color-black);
-  margin-bottom: 7px;
+  margin-bottom: 3px;
+  outline: none;
+}
+
+.form__step-input--error {
+  border: 1px solid var(--color-strong-red);
+}
+
+.form__stept-input--success {
+  border: 1px solid var(--color-primary-green);
 }
 
 .form__step-input input::placeholder {
@@ -817,6 +867,21 @@ font-family: 'Bebas Neue', sans-serif;
 }
 
 .form-btn--disabled {
+  padding: 9px 137px;
+  border: none;
+  display: block;
+  margin: 0 auto;
+  color: var(--color-white);
+  background-color: var(--color-light-gray);
+  text-align: center;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 24px;
+  font-weight: var(--font-bold);
+  text-transform: uppercase;
+  margin-bottom: 33px;
+}
+
+.form-btn--off {
   padding: 9px 137px;
   border: none;
   display: block;
@@ -898,7 +963,7 @@ font-family: 'Bebas Neue', sans-serif;
   margin-right: 14px;
 }
 
-.form__step-succeseful {
+.form__step-successeful {
   color: #3c763d;
   font-family: Roboto;
   font-size: 14px;
@@ -960,8 +1025,13 @@ input.invalid {
   right: 4px;
 }
 
-.draggable {
+/* .draggable {
   margin-left: 30px;
+} */
+
+.draggable {
+  margin-left: 50px;
+  margin-right: 45px;
 }
 
 /* Section expertise  */
@@ -1157,6 +1227,8 @@ input.invalid {
 
 .footer-bottom__copy a {
   color: #888;
+  font-size: 12px;
+  line-height: 17.143px;
 }
 
 .footer-bottom__copy::before {
@@ -1178,10 +1250,11 @@ input.invalid {
 
 /* Media responsive */
 @media (max-width: 1400px) {
-  .crypto__content-inner::after {
+  /* De verificat repetat */
+  /* .crypto__content-inner::after {
     right: 20px;
     transform: translateX(0);
-  }
+  } */
 }
 
 @media (max-width: 1200px) {
@@ -1289,17 +1362,15 @@ input.invalid {
   .header__content {
     background: linear-gradient(
         180deg,
-        rgba(32, 46, 71, 0.65) 36.53%,
-        rgba(32, 46, 71, 0.62) 57.69%,
-        rgba(32, 46, 71, 0.58) 78.84%,
-        rgba(32, 46, 71, 0) 100%
+        rgba(13, 12, 18, 0.65) 36.53%,
+        rgba(21, 17, 26, 0) 100%
       ),
       url("../images/decor/header-bg-tablet.png");
 
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    background-color: var(--color-black);
+    background-color: var(--color-dark-violet);
     padding-bottom: 100px;
   }
 
@@ -1680,16 +1751,14 @@ input.invalid {
   .header__content {
     background: linear-gradient(
         180deg,
-        rgba(32, 46, 71, 0.65) 36.53%,
-        rgba(32, 46, 71, 0.62) 57.69%,
-        rgba(32, 46, 71, 0.58) 78.84%,
-        rgba(32, 46, 71, 0) 100%
+        rgba(13, 12, 18, 0.65) 36.53%,
+        rgba(21, 17, 26, 0) 100%
       ),
       url("../images/decor/header-bg-mobile.png");
     background-repeat: no-repeat;
     background-position: top center;
     background-size: contain;
-    background-color: var(--color-black);
+    background-color: var(--color-dark-violet);
     padding-bottom: 66px;
   }
 
@@ -2045,9 +2114,9 @@ input.invalid {
     background-position: top;
   }
 
-  .crypto__content-inner-after {
+  /* .crypto__content-inner-after {
     position: relative;
-  }
+  } */
 
   .crypto__container {
     position: relative;
@@ -2060,7 +2129,6 @@ input.invalid {
     width: 127px;
     height: 123px;
     right: 0;
-
     top: -58px;
     display: flex;
     justify-content: flex-end;
@@ -2094,5 +2162,16 @@ input.invalid {
     background-image: url("../images/decor/Intersect-desk.svg");
     background-repeat: no-repeat;
     background-position: right;
+  }
+
+  .crypto__green {
+    content: "";
+    position: absolute;
+    /* width: 455px; */
+    /* height: 723px; */
+    right: -18px;
+    top: -99px;
+    width: 150.888px;
+    height: 304.648px;
   }
 }
