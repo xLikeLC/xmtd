@@ -2450,15 +2450,5 @@ input.invalid {
       margin-bottom: 0px;
       padding-left: 2px;
     }
-    .crypto__green {
-      content: "";
-      position: absolute;
-      width: 455px;
-      height: 723px;
-      right: 1px;
-      top: -77px;
-      width: 153.888px;
-      height: 306.648px;
-    }
   }
 }
