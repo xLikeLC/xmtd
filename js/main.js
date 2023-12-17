@@ -273,22 +273,30 @@ passInput.addEventListener("input", (e) => {
   }
 
   if (
-    (withinRange,
+    (!withinRange || e.target.value.length > 15,
     oneOrMoreNumbers,
     oneOrMoreLowercase,
     oneOrMoreUppercase,
     oneOrMoreSpecial)
   ) {
+    console.log(!withinRange || e.target.value.length > 15);
     barsSucces.classList.add("form__bars-line--50");
     btnSucces.classList.remove("form-btn--disabled");
     btnSucces.classList.add("form-btn--success");
     inputSucces.classList.add("form__step-input--success");
-    console.log(inputSucces);
   } else {
     barsSucces.classList.remove("form__bars-line--50");
     btnSucces.classList.remove("form-btn--success");
     btnSucces.classList.add("form-btn--disabled");
     inputSucces.classList.remove("form__step-input--success");
+  }
+  if (!withinRange || e.target.value.length > 15) {
+    barsSucces.classList.remove("form__bars-line--50");
+    btnSucces.classList.add("form-btn--disabled");
+    btnSucces.classList.remove("form-btn--success");
+    inputSucces.classList.remove("form__step-input--success");
+  } else {
+    btnSucces.classList.add("form-btn--disabled");
   }
 });
 
@@ -299,15 +307,12 @@ function validateStep1() {
   const btnStep1 = document.querySelector(".btn-next");
   let thisYear = new Date().getFullYear() - new Date(birthday).getFullYear();
   if (fullName === "" || birthday === "") {
-    // alert("Please complete all steps.");
     return false;
   }
   if (thisYear > 60) {
-    // alert("Maximum age requirements, 60 years old");
     return false;
   }
   if (thisYear <= 18) {
-    // alert("Minimum age requirements, 18 years old");
     return false;
   }
   showStep(2);

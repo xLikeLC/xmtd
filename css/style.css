@@ -208,6 +208,19 @@ font-family: 'Bebas Neue', sans-serif;
   padding-bottom: 178px;
 }
 
+/* .header__container {
+  position: relative;
+}
+.header__container::before {
+  position: absolute;
+  content: "";
+  background-image: url("../images/decor/intersect-desk.svg");
+  width: 326px;
+  height: 745px;
+  left: 0;
+  top: 0;
+} */
+
 .header__content-inner {
   display: flex;
   flex-direction: column;
@@ -337,18 +350,9 @@ font-family: 'Bebas Neue', sans-serif;
   right: 69%;
   top: 38%;
 }
-
-/* .crypto__info {
-  background-image: url("../images/decor/Intersect-desk.svg");
-  background-repeat: no-repeat;
-  background-position: right;
-} */
-
-/* .crypto__info-items {
-  background-image: url("../images/decor/line-before.svg");
-  background-repeat: no-repeat;
-  background-position: center right;
-} */
+.crypto__info {
+  position: relative;
+}
 
 .crypto__content-items {
   border-radius: 14px;
@@ -761,15 +765,6 @@ font-family: 'Bebas Neue', sans-serif;
 .form__step-input::placeholder {
   color: #999;
 }
-
-/* .form__step-input--username ::placeholder {
-  color: #b1b1b1;
-  font-family: Roboto;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-} */
 
 .form__step-input--username {
   position: relative;
