@@ -134,12 +134,13 @@ birthDateInput.addEventListener("input", (e) => {
     stepBars.classList.add("form__bars--success");
   }
 });
-
 function validateEmail() {
   let emailInput = document.getElementById("email");
   let emailError = document.getElementById("email-error");
   let emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   const emailBorder = document.querySelector(".form__step-input--email");
+  const barsUp = document.querySelector(".form__bars-line--second");
+  const btnUp = document.querySelector(".btn-register");
 
   if (!emailRegex.test(emailInput.value)) {
     emailError.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 9" fill="none">
@@ -149,6 +150,8 @@ function validateEmail() {
       </svg> Please enter a valid email address`;
     emailError.style.display = "block";
     emailBorder.classList.add("form__step-input--error");
+    barsUp.classList.remove("form__bars-line--50");
+    btnUp.classList.remove("form-btn--success");
     return false;
   } else {
     emailError.style.display = "none";
@@ -162,6 +165,33 @@ function validateEmail() {
 
 let emailInput = document.getElementById("email");
 emailInput.addEventListener("input", validateEmail);
+
+// // Validate Email
+// function validateEmail() {
+//   let emailInput = document.getElementById("email");
+//   let emailError = document.getElementById("email-error");
+//   let emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+//   const emailBorder = document.querySelector(".form__step-input--email");
+
+//   if (!emailRegex.test(emailInput.value)) {
+//     emailError.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 9" fill="none">
+//         <g clip-path="url(#clip0_4805_137)">
+//           <path d="M4.5 9C6.98555 9 9 6.98555 9 4.5C9 2.01445 6.98555 0 4.5 0C2.01445 0 0 2.01445 0 4.5C0 6.98555 2.01445 9 4.5 9ZM4.5 6.1875C3.56836 6.1875 2.8125 5.43164 2.8125 4.5C2.8125 3.56836 3.56836 2.8125 4.5 2.8125C5.43164 2.8125 6.1875 3.56836 6.1875 4.5C6.1875 5.43164 5.43164 6.1875 4.5 6.1875Z" fill="#D51820"/>
+//         </g>
+//       </svg> Please enter a valid email address`;
+//     emailError.style.display = "block";
+//     emailBorder.classList.add("form__step-input--error");
+//     barsUp.classList.remove("form__bars-line--50");
+//     btnUp.classList.remove("form-btn--success");
+//     return false;
+//   } else {
+//     emailError.style.display = "none";
+//     emailBorder.classList.add("form__step-input--success");
+//     console.log(emailBorder);
+//     emailBorder.classList.remove("form__step-input--error");
+//     return true;
+//   }
+// }
 
 // password check
 const passInput = document.querySelector("#password");
