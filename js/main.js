@@ -59,7 +59,7 @@ const fullNameInput = document.querySelector("#username");
 const fullNameError = document.querySelector("#fullName-error");
 const btnFirst = document.querySelector(".btn-next");
 const inputUsername = document.querySelector(".form__step-input--username");
-
+const validateFullNameField = (name) => /^([a-zA-Z]+\s?)+$/.test(name);
 fullNameInput.addEventListener("input", (e) => {
   const isValid = validateFullNameField(e.target.value);
   fullNameError.hidden = isValid;
@@ -74,21 +74,31 @@ fullNameInput.addEventListener("input", (e) => {
   }
 });
 
-const validateFullNameField = (name) => /^([a-zA-Z]+\s?)+$/.test(name);
+// birthday input color input change
+let birthdayInput = document.getElementById("birthday");
+birthdayInput.addEventListener("input", function () {
+  this.style.color = "black";
+});
 
+// Setup Birthdate
 const validateBirthDateField = (value) => {
+  const btnStep = document.querySelector(".btn-next");
+  const stepBars = document.querySelector(".form__bars-line--first");
+  if (value == "") {
+    console.log("hello");
+    btnStep.classList.remove("form-btn--success");
+    stepBars.classList.remove("form__bars--success");
+    return false;
+  }
   const date = new Date(value);
   const currentDate = new Date();
-
   const age = currentDate.getFullYear() - date.getFullYear();
-
   return {
     maxAge: age >= 60,
     minAge: age <= 18,
   };
 };
 
-// Setup Birthdate
 const birthDateInput = document.querySelector("#birthday");
 const birthDateMaxAgeError = document.querySelector("#upAgeError");
 const birthDateMinAgeError = document.querySelector("#downAgeError");
@@ -98,25 +108,31 @@ const stepBars = document.querySelector(".form__bars-line--first");
 
 birthDateInput.addEventListener("input", (e) => {
   const { maxAge, minAge } = validateBirthDateField(e.target.value);
-
   birthDateMaxAgeError.hidden = true;
   birthDateMinAgeError.hidden = true;
   if (maxAge) {
     birthDateMaxAgeError.hidden = false;
     inputBirthday.classList.add("form__step-input--error");
+    stepBars.classList.remove("form__bars--success");
+    btnStep.classList.remove("form-btn--success");
     return;
   }
   if (minAge) {
     birthDateMinAgeError.hidden = false;
     inputBirthday.classList.add("form__step-input--error");
+    inputBirthday.classList.remove("form-btn--success");
+    btnStep.classList.remove("form-btn--success");
     console.log(minAge);
     return;
   }
-
-  inputBirthday.classList.remove("form__step-input--error");
-  inputBirthday.classList.add("form__step-input--success");
-  btnStep.classList.add("form-btn--success");
-  stepBars.classList.add("form__bars--success");
+  if (maxAge || minAge) {
+    btnStep.classList.remove("form-btn--success");
+  } else {
+    btnStep.classList.add("form-btn--success");
+    inputBirthday.classList.remove("form__step-input--error");
+    inputBirthday.classList.add("form__step-input--success");
+    stepBars.classList.add("form__bars--success");
+  }
 });
 
 function validateEmail() {
@@ -255,6 +271,7 @@ passInput.addEventListener("input", (e) => {
     paswordInputErrorOneOrMoreSpecial.classList.add("error-message");
     paswordInputErrorOneOrMoreSpecial.classList.remove("success-message");
   }
+
   if (
     (withinRange,
     oneOrMoreNumbers,
@@ -282,18 +299,17 @@ function validateStep1() {
   const btnStep1 = document.querySelector(".btn-next");
   let thisYear = new Date().getFullYear() - new Date(birthday).getFullYear();
   if (fullName === "" || birthday === "") {
-    alert("Please complete all steps.");
+    // alert("Please complete all steps.");
     return false;
   }
   if (thisYear > 60) {
-    alert("Maximum age requirements, 60 years old");
+    // alert("Maximum age requirements, 60 years old");
     return false;
   }
-  if (thisYear < 18) {
-    alert("Minimum age requirements, 18 years old");
+  if (thisYear <= 18) {
+    // alert("Minimum age requirements, 18 years old");
     return false;
   }
-  btnStep.classList.add("form-btn--success");
   showStep(2);
 }
 
@@ -312,31 +328,17 @@ function validateStep2() {
   const oneOrMoreSpecial = (value) => /[#\[ \]()@$&*!?|,.^/\\+_\-]/.test(value);
 
   if (email === "" || password === "") {
-    alert("Please fill in all fields for Step 2.");
     return false;
   }
-  if (!emailRegex.test(email)) {
-    alert("Return");
-    return false;
-  }
-  if (!withinRange(password)) {
-    alert("withinRange");
-    return false;
-  }
-  if (!oneOrMoreNumbers(password)) {
-    alert("oneOrMoreNumbers");
-    return false;
-  }
-  if (!oneOrMoreUppercase(password)) {
-    alert("oneOrMoreUppercase");
-    return false;
-  }
-  if (!oneOrMoreLowercase(password)) {
-    alert("oneOrMoreLowercase");
-    return false;
-  }
-  if (!oneOrMoreSpecial(password)) {
-    alert("oneOrMoreSpecial");
+  if (
+    !emailRegex.test(email) ||
+    !withinRange(password, 8, 15) ||
+    password.length > 15 ||
+    !oneOrMoreNumbers(password) ||
+    !oneOrMoreUppercase(password) ||
+    !oneOrMoreLowercase(password) ||
+    !oneOrMoreSpecial(password)
+  ) {
     return false;
   }
 
