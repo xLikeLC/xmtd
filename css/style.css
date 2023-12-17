@@ -114,15 +114,7 @@ font-family: 'Bebas Neue', sans-serif;
   text-align: center;
 }
 
-/* .error-border {
-  border: 1px solid var(--color-strong-red);
-  border-radius: 5px;
-} */
 
-/* .form-btn--disabled:hover {
-  background-color: var(--color-primary-green);
-  cursor: pointer;
-} */
 
 .form-btn--success {
   padding: 9px 137px;
@@ -208,18 +200,7 @@ font-family: 'Bebas Neue', sans-serif;
   padding-bottom: 178px;
 }
 
-/* .header__container {
-  position: relative;
-}
-.header__container::before {
-  position: absolute;
-  content: "";
-  background-image: url("../images/decor/intersect-desk.svg");
-  width: 326px;
-  height: 745px;
-  left: 0;
-  top: 0;
-} */
+
 
 .header__content-inner {
   display: flex;
@@ -311,6 +292,7 @@ font-family: 'Bebas Neue', sans-serif;
   padding-bottom: 33px;
   position: relative;
   padding-top: 5px;
+  z-index: 100;
 }
 
 .crypto__content-inner {
@@ -331,12 +313,10 @@ font-family: 'Bebas Neue', sans-serif;
 .crypto__green {
   content: "";
   position: absolute;
-  width: 455px;
-  height: 783px;
-  right: -125px;
-  top: -300px;
-}
+  width: 0;
+  height: 0;
 
+}
 .crypto__img {
   display: none;
 }
@@ -434,17 +414,20 @@ font-family: 'Bebas Neue', sans-serif;
   position: relative;
 }
 
-/* .crypto__content-inner::after {
+.crypto__container {
+  position: relative;
+}
+
+.crypto__container::after {
   content: "";
   position: absolute;
-  background-image: url("../images/decor/line-before.svg");
-  width: 1067px;
-  height: 1210px;
-  right: 100px;
-  top: -170px;
-  transform: translateX(16%);
-} */
-
+  background-image: url("../images/decor/line-before1250.svg");
+  width: 1200px;
+  height: 1570px;
+  top: -135px;
+  transform: translateX(-3%);
+  z-index: -1;
+}
 .crypto__info-title::before {
   content: "";
   position: absolute;
@@ -1307,6 +1290,7 @@ input.invalid {
 }
 
 /* Media responsive */
+
 @media (max-width: 1200px) {
   .header__content {
     background-size: cover;
@@ -1320,13 +1304,31 @@ input.invalid {
     letter-spacing: 1px;
     text-transform: uppercase;
     margin: 0 auto;
-    /* padding-top: 110px; */
     margin-bottom: 5px;
     margin-top: 110px;
   }
+  .crypto__container::after {
+    content: "";
+    position: absolute;
+    background-image: url("../images/decor/line-before.svg");
+    width: 1130px;
+    height: 1370px;
+    top: -120px;
+    transform: translateX(0%);
+}
 }
 
 @media (max-width: 1150px) {
+  .crypto__container::after {
+    content: "";
+    position: absolute;
+    background-image: url("../images/decor/line-768.svg");
+    width: 0px;
+    height: 0px;
+    top: -101px;
+    transform: translateX(26%);
+  }
+
   .expertise__items-ellipse::before {
     content: "";
     position: absolute;
@@ -1593,6 +1595,16 @@ input.invalid {
   }
   .crypto__info-item--fast::before {
     display: none;
+  }
+
+  .crypto__container::after {
+    content: "";
+    position: absolute;
+    background-image: url("../images/decor/line-768.svg");
+    width: 550px;
+    height: 1346px;
+    top: -101px;
+    transform: translateX(26%);
   }
 
   .crypto__info-item {
@@ -1889,6 +1901,9 @@ input.invalid {
   .expertise__title {
     margin-left: 20px;
   }
+
+  .crypto__container::after {
+    display: none;
 }
 
 @media (max-width: 550px) {
@@ -1980,17 +1995,6 @@ input.invalid {
   .crypto {
     position: relative;
   }
-
-  /* .crypto::before {
-    content: "";
-    position: absolute;
-    background-image: url("../images/decor/zero-red.png");
-    width: 349px;
-    height: 371px;
-    left: 1%;
-    top: 1%;
-    transform: translateX(13px);
-  } */
 
   .crypto__content-inner::after {
     background-image: url("../images/icon/line-768svg.svg");
@@ -2399,17 +2403,12 @@ input.invalid {
     margin-left: 12px;
     margin-right: 12px;
   }
-  /* .crypto__info {
-    background-image: url("../images/decor/Intersect-desk.svg");
-    background-repeat: no-repeat;
-    background-position: right;
-  } */
 
   .crypto__content-inner::before {
     content: "";
     position: absolute;
     background-image: url("../images/decor/0-before-768.png");
-    width: 476px;
+    width: 46px;
     height: 540px;
     right: 45%;
     top: 95%;
@@ -2417,14 +2416,8 @@ input.invalid {
   }
 
   .crypto__green {
-    content: "";
-    position: absolute;
-    /* width: 455px; */
-    /* height: 723px; */
-    right: -18px;
-    top: -99px;
-    width: 150.888px;
-    height: 304.648px;
+    width: 0px;
+    height: 0px;
   }
 
   .footer-bottom {
@@ -2462,4 +2455,14 @@ input.invalid {
     margin-bottom: 0px;
     padding-left: 2px;
   }
+  .crypto__green {
+    content: "";
+    position: absolute;
+    width: 455px;
+    height: 723px;
+    right: 1px;
+    top: -77px;
+    width: 153.888px;
+    height: 306.648px;
+}
 }
