@@ -762,6 +762,15 @@ font-family: 'Bebas Neue', sans-serif;
   color: #999;
 }
 
+/* .form__step-input--username ::placeholder {
+  color: #b1b1b1;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+} */
+
 .form__step-input--username {
   position: relative;
 }
@@ -776,6 +785,13 @@ font-family: 'Bebas Neue', sans-serif;
 
 .error-message--birth {
   position: absolute;
+}
+
+.form__step-input--email {
+  position: relative;
+}
+.error-message--email {
+  position: relative;
 }
 
 .password-criteria--default,
@@ -863,6 +879,7 @@ font-family: 'Bebas Neue', sans-serif;
   height: 40px;
   background: #f7f7f7;
   border: 1px solid #a9a9a9;
+  font-size: 14px;
   display: block;
   width: 100%;
   padding: 22px 4px;
@@ -1291,14 +1308,6 @@ input.invalid {
 }
 
 /* Media responsive */
-@media (max-width: 1400px) {
-  /* De verificat repetat */
-  /* .crypto__content-inner::after {
-    right: 20px;
-    transform: translateX(0);
-  } */
-}
-
 @media (max-width: 1200px) {
   .header__content {
     background-size: cover;
@@ -1327,19 +1336,30 @@ input.invalid {
     top: 130px;
     left: 52px;
   }
-
+  .crypto__content-items {
+    border-radius: 14px;
+    border: 0.954px solid rgba(167, 167, 167, 0.2);
+    background: rgba(140, 140, 140, 0.1);
+    padding: 0px 11px 7px 6px;
+    max-width: 208px;
+    width: 246px;
+    z-index: 1;
+  }
   .crypto__content-inner {
-    margin: 10px 24px 0 24px;
+    padding-top: 15px;
+    margin: 2px 20px 0 20px;
     display: flex;
-    gap: 3px;
-    justify-content: space-evenly;
-    padding-bottom: 90px;
-    position: relative;
-    flex-wrap: wrap;
-    z-index: 0;
+    justify-content: center;
+    padding-bottom: 40px;
+    gap: 10px;
   }
   .crypto__content-items {
-    margin: 0 0px 29px 11px;
+    padding: 0px 15px 5px 10px;
+    margin-bottom: 30px;
+  }
+
+  .crypto__content-items {
+    margin: 0 0px 15px 0px;
   }
 
   .crypto__info-items {
@@ -1517,7 +1537,7 @@ input.invalid {
   }
 
   .crypto__content-item-unit {
-    margin-right: 4px;
+    margin-right: 10px;
     margin-bottom: 16px;
   }
 
@@ -2237,11 +2257,15 @@ input.invalid {
   }
 
   .expertise__item p {
-    margin-bottom: 30px;
+    margin-bottom: 43px;
   }
 
   .expertise__item:nth-child(2) {
-    margin-bottom: 13px;
+    margin-bottom: -24px;
+  }
+
+  .expertise__item-title {
+    padding-top: 71px;
   }
 
   .expertise__item-descr {
@@ -2288,7 +2312,7 @@ input.invalid {
   .expertise__inner {
     padding-top: 0px;
     margin-top: 55px;
-    margin-bottom: 45px;
+    margin-bottom: 27px;
   }
 
   .expertise__descr {
