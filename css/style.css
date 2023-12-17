@@ -747,6 +747,10 @@ font-family: 'Bebas Neue', sans-serif;
   width: 50%;
 }
 
+.form__bars-none::before {
+  width: 0%;
+}
+
 .form__bars-line--50::before {
   content: "";
   position: absolute;
