@@ -114,8 +114,6 @@ font-family: 'Bebas Neue', sans-serif;
   text-align: center;
 }
 
-
-
 .form-btn--success {
   padding: 9px 137px;
   border: none;
@@ -199,8 +197,6 @@ font-family: 'Bebas Neue', sans-serif;
   background-color: var(--color-dark-violet);
   padding-bottom: 178px;
 }
-
-
 
 .header__content-inner {
   display: flex;
@@ -315,7 +311,6 @@ font-family: 'Bebas Neue', sans-serif;
   position: absolute;
   width: 0;
   height: 0;
-
 }
 .crypto__img {
   display: none;
@@ -1315,7 +1310,7 @@ input.invalid {
     height: 1370px;
     top: -120px;
     transform: translateX(0%);
-}
+  }
 }
 
 @media (max-width: 1150px) {
@@ -1904,565 +1899,566 @@ input.invalid {
 
   .crypto__container::after {
     display: none;
-}
-
-@media (max-width: 550px) {
-  .header__content-title {
-    max-width: 465px;
-    font-size: 25px;
-  }
-  .expertise__items-ellipse::before {
-    display: none;
-  }
-  .form-btn--success,
-  .form-btn--disabled {
-    padding: 0;
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
-  .form {
-    max-width: 1146px;
-    padding: 40px 80px;
-    padding-bottom: 35px;
-    margin: 0 auto;
   }
 
-  .expertise__title {
-    margin-left: 20px;
-  }
-}
+  @media (max-width: 550px) {
+    .header__content-title {
+      max-width: 465px;
+      font-size: 25px;
+    }
+    .expertise__items-ellipse::before {
+      display: none;
+    }
+    .form-btn--success,
+    .form-btn--disabled {
+      padding: 0;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+    .form {
+      max-width: 1146px;
+      padding: 40px 80px;
+      padding-bottom: 35px;
+      margin: 0 auto;
+    }
 
-@media screen and (max-width: 450px) {
-  .header__content {
-    background: linear-gradient(
-        180deg,
-        rgba(13, 12, 18, 0.65) 36.53%,
-        rgba(21, 17, 26, 0) 100%
-      ),
-      url("../images/decor/header-bg-mobile.png");
-    background-repeat: no-repeat;
-    background-position: top center;
-    background-size: contain;
-    background-color: var(--color-dark-violet);
-    padding-bottom: 66px;
-  }
-
-  .header__top-inner {
-    padding: 23px 0;
-  }
-
-  .header__content-item {
-    margin-left: 0;
+    .expertise__title {
+      margin-left: 20px;
+    }
   }
 
-  .header__content-title {
-    text-align: center;
-    max-width: 249px;
-    line-height: 38px;
-    margin-left: 0px;
-  }
+  @media screen and (max-width: 450px) {
+    .header__content {
+      background: linear-gradient(
+          180deg,
+          rgba(13, 12, 18, 0.65) 36.53%,
+          rgba(21, 17, 26, 0) 100%
+        ),
+        url("../images/decor/header-bg-mobile.png");
+      background-repeat: no-repeat;
+      background-position: top center;
+      background-size: contain;
+      background-color: var(--color-dark-violet);
+      padding-bottom: 66px;
+    }
 
-  .header__content-descr {
-    font-size: 14px;
-    line-height: 22px;
-    max-width: 232px;
-    letter-spacing: 0.2px;
-    margin-bottom: 28px;
-  }
+    .header__top-inner {
+      padding: 23px 0;
+    }
 
-  .header__content-descr span {
-    font-size: 13px;
-  }
+    .header__content-item {
+      margin-left: 0;
+    }
 
-  .header__content-btn {
-    font-size: 23px;
-    white-space: nowrap;
-    overflow: hidden;
-    margin-bottom: 14px;
-    padding: 7px 93px;
-  }
+    .header__content-title {
+      text-align: center;
+      max-width: 249px;
+      line-height: 38px;
+      margin-left: 0px;
+    }
 
-  .header__content-terms {
-    max-width: 232px;
-    font-size: 11.5px;
-    text-align: center;
-  }
+    .header__content-descr {
+      font-size: 14px;
+      line-height: 22px;
+      max-width: 232px;
+      letter-spacing: 0.2px;
+      margin-bottom: 28px;
+    }
 
-  .crypto__content-inner::after {
-    display: none;
-  }
+    .header__content-descr span {
+      font-size: 13px;
+    }
 
-  .crypto {
-    position: relative;
-  }
+    .header__content-btn {
+      font-size: 23px;
+      white-space: nowrap;
+      overflow: hidden;
+      margin-bottom: 14px;
+      padding: 7px 93px;
+    }
 
-  .crypto__content-inner::after {
-    background-image: url("../images/icon/line-768svg.svg");
-    width: 671px;
-    height: 1346px;
-    top: 0;
-    right: 5px;
-    transform: translateX(13px);
-  }
+    .header__content-terms {
+      max-width: 232px;
+      font-size: 11.5px;
+      text-align: center;
+    }
 
-  .crypto__content-item-img {
-    margin-bottom: 14px;
-  }
-  .crypto__content-item--link {
-    margin-bottom: 13px;
-  }
+    .crypto__content-inner::after {
+      display: none;
+    }
 
-  .crypto__content-price {
-    margin-bottom: 5px;
-  }
+    .crypto {
+      position: relative;
+    }
 
-  .crypto__content-items {
-    border-radius: 14px;
-    border: 0.954px solid rgba(167, 167, 167, 0.2);
-    background: rgba(140, 140, 140, 0.1);
-    padding: 0px 24px 9px 13px;
-    max-width: 500px;
-    width: 235px;
-    margin: 0;
-  }
+    .crypto__content-inner::after {
+      background-image: url("../images/icon/line-768svg.svg");
+      width: 671px;
+      height: 1346px;
+      top: 0;
+      right: 5px;
+      transform: translateX(13px);
+    }
 
-  .crypto__info-items {
-    grid-gap: 27px;
-    margin-bottom: 40px;
-    padding-left: 5px;
-    padding-right: 16px;
-  }
+    .crypto__content-item-img {
+      margin-bottom: 14px;
+    }
+    .crypto__content-item--link {
+      margin-bottom: 13px;
+    }
 
-  .crypto__info-item-title {
-    padding-bottom: 13px;
-    margin-bottom: 20px;
-  }
+    .crypto__content-price {
+      margin-bottom: 5px;
+    }
 
-  .crypto__info-item {
-    background-repeat: no-repeat;
-    background-position: center;
-    position: relative;
-  }
+    .crypto__content-items {
+      border-radius: 14px;
+      border: 0.954px solid rgba(167, 167, 167, 0.2);
+      background: rgba(140, 140, 140, 0.1);
+      padding: 0px 24px 9px 13px;
+      max-width: 500px;
+      width: 235px;
+      margin: 0;
+    }
 
-  .crypto__info-item:nth-child(1) {
-    padding: 38px 49px 36px 30px;
-    grid-column: span 2;
-  }
+    .crypto__info-items {
+      grid-gap: 27px;
+      margin-bottom: 40px;
+      padding-left: 5px;
+      padding-right: 16px;
+    }
 
-  .crypto__info-item:nth-child(2) {
-    grid-column: span 2;
-    padding: 39px 42px 29px 28px;
-  }
+    .crypto__info-item-title {
+      padding-bottom: 13px;
+      margin-bottom: 20px;
+    }
 
-  .crypto__info-item:nth-child(3) {
-    padding: 45px 62px 37px 29px;
-  }
+    .crypto__info-item {
+      background-repeat: no-repeat;
+      background-position: center;
+      position: relative;
+    }
 
-  .crypto__info-item-title {
-    font-size: 20px;
-    width: 70%;
-  }
+    .crypto__info-item:nth-child(1) {
+      padding: 38px 49px 36px 30px;
+      grid-column: span 2;
+    }
 
-  .crypto__info-item--fast::after {
-    content: "";
-    position: absolute;
-    background-image: url("../images/decor/fast-320.png");
-    background-size: cover;
-    background-position: center;
-    width: 30px;
-    height: 60px;
-    right: 25px;
-    top: 17px;
-  }
+    .crypto__info-item:nth-child(2) {
+      grid-column: span 2;
+      padding: 39px 42px 29px 28px;
+    }
 
-  .crypto__info-item--pricing::before {
-    content: "";
-    position: absolute;
-    background-image: url("../images/decor/price-icon.png");
-    background-size: cover;
-    background-position: center;
-    width: 50px;
-    height: 55px;
-    top: 18px;
-    right: 21px;
-  }
+    .crypto__info-item:nth-child(3) {
+      padding: 45px 62px 37px 29px;
+    }
 
-  .crypto__info-item--tech::before {
-    content: "";
-    position: absolute;
-    background-image: url("../images/decor/tech-icon.png");
-    background-size: cover;
-    background-position: center;
-    width: 45px;
-    height: 53px;
-    top: 27px;
-    right: 24px;
-  }
+    .crypto__info-item-title {
+      font-size: 20px;
+      width: 70%;
+    }
 
-  .crypto__info-item--usd::before {
-    content: "";
-    position: absolute;
-    background-image: url("../images/decor/dollar-icon.png");
-    background-size: cover;
-    background-position: center;
-    width: 38px;
-    height: 66px;
-    top: 15px;
-    right: 22px;
-  }
+    .crypto__info-item--fast::after {
+      content: "";
+      position: absolute;
+      background-image: url("../images/decor/fast-320.png");
+      background-size: cover;
+      background-position: center;
+      width: 30px;
+      height: 60px;
+      right: 25px;
+      top: 17px;
+    }
 
-  .crypto__info-title {
-    margin: 0 auto;
-    max-width: 235px;
-    font-size: 35px;
-    margin-bottom: 20px;
-    padding-bottom: 20px;
-  }
+    .crypto__info-item--pricing::before {
+      content: "";
+      position: absolute;
+      background-image: url("../images/decor/price-icon.png");
+      background-size: cover;
+      background-position: center;
+      width: 50px;
+      height: 55px;
+      top: 18px;
+      right: 21px;
+    }
 
-  .crypto__info-title::before {
-    right: 38%;
-  }
+    .crypto__info-item--tech::before {
+      content: "";
+      position: absolute;
+      background-image: url("../images/decor/tech-icon.png");
+      background-size: cover;
+      background-position: center;
+      width: 45px;
+      height: 53px;
+      top: 27px;
+      right: 24px;
+    }
 
-  .crypto__info-item:nth-child(4) {
-    grid-column: span 2;
-    padding: 50px 55px 55px 30px;
-  }
+    .crypto__info-item--usd::before {
+      content: "";
+      position: absolute;
+      background-image: url("../images/decor/dollar-icon.png");
+      background-size: cover;
+      background-position: center;
+      width: 38px;
+      height: 66px;
+      top: 15px;
+      right: 22px;
+    }
 
-  .crypto__info-item-title {
-    font-size: 20px;
-  }
+    .crypto__info-title {
+      margin: 0 auto;
+      max-width: 235px;
+      font-size: 35px;
+      margin-bottom: 20px;
+      padding-bottom: 20px;
+    }
 
-  .register__title {
-    font-size: 24px;
-    margin-bottom: 42px;
-  }
+    .crypto__info-title::before {
+      right: 38%;
+    }
 
-  .register__subtitle {
-    margin-right: 28px;
-    margin-left: 18px;
-  }
+    .crypto__info-item:nth-child(4) {
+      grid-column: span 2;
+      padding: 50px 55px 55px 30px;
+    }
 
-  .register__info {
-    flex-direction: column;
-    align-items: center;
-  }
+    .crypto__info-item-title {
+      font-size: 20px;
+    }
 
-  .register__info-item {
-    border-bottom: 1px solid var(--color-white);
-    border-right: none;
-  }
+    .register__title {
+      font-size: 24px;
+      margin-bottom: 42px;
+    }
 
-  .register__info-item {
-    padding-top: 7px;
-    border-top: 0;
-  }
+    .register__subtitle {
+      margin-right: 28px;
+      margin-left: 18px;
+    }
 
-  .register__info-item:nth-child(1) {
-    padding-left: 43px;
-  }
+    .register__info {
+      flex-direction: column;
+      align-items: center;
+    }
 
-  .register__info-item:nth-child(2) {
-    text-align: center;
-    padding-right: 58px;
-    padding-left: 47px;
-    padding-top: 21px;
-  }
+    .register__info-item {
+      border-bottom: 1px solid var(--color-white);
+      border-right: none;
+    }
 
-  .register__info-item:nth-child(3) {
-    border: none;
-    padding-top: 22px;
-    padding-left: 0;
-  }
-  .crypto {
-    display: flex;
-    background: var(--color-dark-violet);
-    padding-bottom: 31px;
-    position: relative;
-    padding-top: 20px;
-  }
-  .form {
-    max-width: 1146px;
-    padding: 56px 20px;
-    margin: 0 auto;
-    padding-bottom: 63px;
-  }
+    .register__info-item {
+      padding-top: 7px;
+      border-top: 0;
+    }
 
-  .form-btn--success,
-  .form-btn--disabled {
-    padding: 0;
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
-  /* .form-btn--disabled {
+    .register__info-item:nth-child(1) {
+      padding-left: 43px;
+    }
+
+    .register__info-item:nth-child(2) {
+      text-align: center;
+      padding-right: 58px;
+      padding-left: 47px;
+      padding-top: 21px;
+    }
+
+    .register__info-item:nth-child(3) {
+      border: none;
+      padding-top: 22px;
+      padding-left: 0;
+    }
+    .crypto {
+      display: flex;
+      background: var(--color-dark-violet);
+      padding-bottom: 31px;
+      position: relative;
+      padding-top: 20px;
+    }
+    .form {
+      max-width: 1146px;
+      padding: 56px 20px;
+      margin: 0 auto;
+      padding-bottom: 63px;
+    }
+
+    .form-btn--success,
+    .form-btn--disabled {
+      padding: 0;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+    /* .form-btn--disabled {
     padding: 11px 188px;
   } */
-  .form__bars-items-media {
-    display: none;
-  }
+    .form__bars-items-media {
+      display: none;
+    }
 
-  .form__bars {
-    display: block;
-  }
+    .form__bars {
+      display: block;
+    }
 
-  .form__bars-info {
-    margin-bottom: 6px;
-  }
+    .form__bars-info {
+      margin-bottom: 6px;
+    }
 
-  .form__bars-line {
-    margin-bottom: 26px;
-  }
+    .form__bars-line {
+      margin-bottom: 26px;
+    }
 
-  .form__step-items {
-    margin-bottom: 11px;
-  }
+    .form__step-items {
+      margin-bottom: 11px;
+    }
 
-  .form__bars-item--first {
-    display: none;
-  }
+    .form__bars-item--first {
+      display: none;
+    }
 
-  .form__step-input {
-    padding: 21px 7px;
-  }
+    .form__step-input {
+      padding: 21px 7px;
+    }
 
-  .header__content-subtitle {
-    margin-top: 70px;
-  }
+    .header__content-subtitle {
+      margin-top: 70px;
+    }
 
-  .crypto {
-    display: flex;
-    background: var(--color-dark-violet);
-    padding-bottom: 31px;
-    position: relative;
-    padding-top: 10px;
-  }
+    .crypto {
+      display: flex;
+      background: var(--color-dark-violet);
+      padding-bottom: 31px;
+      position: relative;
+      padding-top: 10px;
+    }
 
-  .slick-prev {
-    top: 48px;
-    left: 8px;
-  }
+    .slick-prev {
+      top: 48px;
+      left: 8px;
+    }
 
-  .slick-next {
-    right: 9px;
-    top: 47px;
-  }
+    .slick-next {
+      right: 9px;
+      top: 47px;
+    }
 
-  .draggable {
-    margin-left: 12px;
-    margin-right: 0px;
-  }
+    .draggable {
+      margin-left: 12px;
+      margin-right: 0px;
+    }
 
-  .slider__title {
-    margin-bottom: 40px;
-  }
+    .slider__title {
+      margin-bottom: 40px;
+    }
 
-  .slider-blog {
-    padding: 50px 0px 74px;
-  }
+    .slider-blog {
+      padding: 50px 0px 74px;
+    }
 
-  .expertise__item p {
-    margin-bottom: 43px;
-  }
+    .expertise__item p {
+      margin-bottom: 43px;
+    }
 
-  .expertise__item:nth-child(2) {
-    margin-bottom: -24px;
-  }
+    .expertise__item:nth-child(2) {
+      margin-bottom: -24px;
+    }
 
-  .expertise__item-title {
-    padding-top: 71px;
-  }
+    .expertise__item-title {
+      padding-top: 71px;
+    }
 
-  .expertise__item-descr {
-    margin-bottom: 25px;
-  }
+    .expertise__item-descr {
+      margin-bottom: 25px;
+    }
 
-  .expertise__item-title {
-    text-align: center;
-  }
+    .expertise__item-title {
+      text-align: center;
+    }
 
-  .slider__title {
-    font-size: 24px;
-  }
+    .slider__title {
+      font-size: 24px;
+    }
 
-  .expertise__info {
-    padding-left: 0px;
-  }
+    .expertise__info {
+      padding-left: 0px;
+    }
 
-  .form-btn__text {
-    margin-bottom: 20px;
-  }
-  .form__step-group {
-    margin-bottom: 24px;
-  }
+    .form-btn__text {
+      margin-bottom: 20px;
+    }
+    .form__step-group {
+      margin-bottom: 24px;
+    }
 
-  .slider-blog {
-    padding: 46px 0 72px;
-    padding-bottom: 50px;
-  }
-  .expertise__title {
-    font-size: 36px;
-  }
+    .slider-blog {
+      padding: 46px 0 72px;
+      padding-bottom: 50px;
+    }
+    .expertise__title {
+      font-size: 36px;
+    }
 
-  .form-btn--active {
-    padding: 5px 90px;
-    font-size: 18px;
-  }
+    .form-btn--active {
+      padding: 5px 90px;
+      font-size: 18px;
+    }
 
-  .form__step-item {
-    padding: 33px 17px 44px 13px;
-    margin-right: 0px;
-  }
+    .form__step-item {
+      padding: 33px 17px 44px 13px;
+      margin-right: 0px;
+    }
 
-  .expertise__inner {
-    padding-top: 0px;
-    margin-top: 55px;
-    margin-bottom: 27px;
-  }
+    .expertise__inner {
+      padding-top: 0px;
+      margin-top: 55px;
+      margin-bottom: 27px;
+    }
 
-  .expertise__descr {
-    color: var(--color-dark-gray);
-    font-size: 13px;
-    line-height: 23.879px;
-    margin-bottom: 35px;
-    width: 100%;
-  }
+    .expertise__descr {
+      color: var(--color-dark-gray);
+      font-size: 13px;
+      line-height: 23.879px;
+      margin-bottom: 35px;
+      width: 100%;
+    }
 
-  .expertise__info {
-    width: 87%;
-  }
+    .expertise__info {
+      width: 87%;
+    }
 
-  .expertise__descr {
-    margin-bottom: 50px;
-    text-align: center;
-  }
+    .expertise__descr {
+      margin-bottom: 50px;
+      text-align: center;
+    }
 
-  .gallery-slider__img {
-    max-width: 100px;
-    height: 100px;
-  }
+    .gallery-slider__img {
+      max-width: 100px;
+      height: 100px;
+    }
 
-  .expertise__title {
-    margin-left: 0px;
-    max-width: 0px;
-  }
+    .expertise__title {
+      margin-left: 0px;
+      max-width: 0px;
+    }
 
-  .expertise__title::after {
-    top: 0px;
-    left: 110px;
-  }
+    .expertise__title::after {
+      top: 0px;
+      left: 110px;
+    }
 
-  .expertise__items {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    column-gap: 155px;
-  }
-  /* 
+    .expertise__items {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      column-gap: 155px;
+    }
+    /* 
   .footer-bottom-items {
     display: none;
   } */
 
-  .footer-bottom__logo {
-    margin: 0 auto;
-  }
+    .footer-bottom__logo {
+      margin: 0 auto;
+    }
 
-  .footer-bottom__logo {
-    padding: 50px 0;
-  }
+    .footer-bottom__logo {
+      padding: 50px 0;
+    }
 
-  .expertise__item--security,
-  .expertise__item--fair,
-  .expertise__item--win,
-  .expertise__item--support {
-    background-position: top;
-  }
+    .expertise__item--security,
+    .expertise__item--fair,
+    .expertise__item--win,
+    .expertise__item--support {
+      background-position: top;
+    }
 
-  .crypto__container {
-    position: relative;
-  }
+    .crypto__container {
+      position: relative;
+    }
 
-  .crypto__img {
-    display: block;
-    content: "";
-    position: absolute;
-    width: 115px;
-    height: 138px;
-    right: 0;
-    top: -60px;
-    display: flex;
-    justify-content: flex-end;
-  }
+    .crypto__img {
+      display: block;
+      content: "";
+      position: absolute;
+      width: 115px;
+      height: 138px;
+      right: 0;
+      top: -60px;
+      display: flex;
+      justify-content: flex-end;
+    }
 
-  .crypto__content-inner {
-    display: grid;
-    grid-gap: 37px;
-    padding-bottom: 65px;
-  }
+    .crypto__content-inner {
+      display: grid;
+      grid-gap: 37px;
+      padding-bottom: 65px;
+    }
 
-  .crypto__info-subtitle {
-    line-height: 21px;
-    margin-bottom: 55px;
-    margin-left: 12px;
-    margin-right: 12px;
-  }
+    .crypto__info-subtitle {
+      line-height: 21px;
+      margin-bottom: 55px;
+      margin-left: 12px;
+      margin-right: 12px;
+    }
 
-  .crypto__content-inner::before {
-    content: "";
-    position: absolute;
-    background-image: url("../images/decor/0-before-768.png");
-    width: 46px;
-    height: 540px;
-    right: 45%;
-    top: 95%;
-    z-index: 0;
-  }
+    .crypto__content-inner::before {
+      content: "";
+      position: absolute;
+      background-image: url("../images/decor/0-before-768.png");
+      width: 46px;
+      height: 540px;
+      right: 45%;
+      top: 95%;
+      z-index: 0;
+    }
 
-  .crypto__green {
-    width: 0px;
-    height: 0px;
-  }
+    .crypto__green {
+      width: 0px;
+      height: 0px;
+    }
 
-  .footer-bottom {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-  }
+    .footer-bottom {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+    }
 
-  .footer-bottom {
-    display: flex;
-    justify-content: space-between;
-  }
+    .footer-bottom {
+      display: flex;
+      justify-content: space-between;
+    }
 
-  .footer-bottom__copy:not(:last-child) {
-    margin-right: 3px;
-  }
+    .footer-bottom__copy:not(:last-child) {
+      margin-right: 3px;
+    }
 
-  .footer-bottom__copy {
-    padding-top: 60px;
-    margin-bottom: 0px;
-    padding-left: 2px;
-  }
+    .footer-bottom__copy {
+      padding-top: 60px;
+      margin-bottom: 0px;
+      padding-left: 2px;
+    }
 
-  .footer-bottom-items {
-    justify-content: center;
+    .footer-bottom-items {
+      justify-content: center;
+    }
+    .footer-bottom__logo {
+      padding-top: 25px;
+      padding-bottom: 65px;
+    }
   }
-  .footer-bottom__logo {
-    padding-top: 25px;
-    padding-bottom: 65px;
+  @media screen and (max-width: 330px) {
+    .footer-bottom__copy {
+      padding-top: 60px;
+      margin-bottom: 0px;
+      padding-left: 2px;
+    }
+    .crypto__green {
+      content: "";
+      position: absolute;
+      width: 455px;
+      height: 723px;
+      right: 1px;
+      top: -77px;
+      width: 153.888px;
+      height: 306.648px;
+    }
   }
-}
-@media screen and (max-width: 330px) {
-  .footer-bottom__copy {
-    padding-top: 60px;
-    margin-bottom: 0px;
-    padding-left: 2px;
-  }
-  .crypto__green {
-    content: "";
-    position: absolute;
-    width: 455px;
-    height: 723px;
-    right: 1px;
-    top: -77px;
-    width: 153.888px;
-    height: 306.648px;
-}
 }
