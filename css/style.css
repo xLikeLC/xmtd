@@ -316,6 +316,18 @@ font-family: 'Bebas Neue', sans-serif;
   display: none;
 }
 
+.crypto__ellipse {
+  display: block;
+  content: "";
+  position: absolute;
+  width: 437px;
+  height: 882px;
+  right: 0;
+  top: -400px;
+  display: flex;
+  justify-content: flex-end;
+}
+
 .crypto__content-inner::before {
   content: "";
   position: absolute;
@@ -1479,6 +1491,18 @@ input.invalid {
     font-size: 13px;
   }
 
+  .crypto__ellipse {
+    display: block;
+    content: "";
+    position: absolute;
+    width: 465px;
+    height: 882px;
+    right: 0;
+    top: -400px;
+    display: flex;
+    justify-content: flex-end;
+  }
+
   .crypto__content-inner::after {
     background-image: url("../images/icon/line-768svg.svg");
     width: 671px;
@@ -1513,11 +1537,11 @@ input.invalid {
 
   .crypto__content-inner {
     padding-top: 15px;
-    margin: 2px 20px 0 20px;
+    margin: 2px 10px 0 23px;
     display: flex;
     justify-content: center;
     padding-bottom: 40px;
-    gap: 10px;
+    gap: 13px;
   }
   .crypto__content-items {
     padding: 0px 15px 5px 10px;
@@ -1750,7 +1774,7 @@ input.invalid {
   }
 
   .form__step-items {
-    margin-bottom: 36px;
+    margin-bottom: 35px;
   }
 
   .form__step-input {
@@ -1925,9 +1949,19 @@ input.invalid {
     .expertise__title {
       margin-left: 20px;
     }
+    /* .crypto__content-inner::before {
+      content: "";
+      position: absolute;
+      background-image: url("../images/decor/0-before-768.png");
+      width: 476px;
+      height: 540px;
+      right: 72%;
+      top: 74%;
+      z-index: 0;
+    } */
   }
 
-  @media screen and (max-width: 450px) {
+  @media (max-width: 450px) {
     .header__content {
       background: linear-gradient(
           180deg,
@@ -1983,10 +2017,6 @@ input.invalid {
       text-align: center;
     }
 
-    .crypto__content-inner::after {
-      display: none;
-    }
-
     .crypto {
       position: relative;
     }
@@ -1995,7 +2025,7 @@ input.invalid {
       background-image: url("../images/icon/line-768svg.svg");
       width: 671px;
       height: 1346px;
-      top: 0;
+      top: 0px;
       right: 5px;
       transform: translateX(13px);
     }
@@ -2350,10 +2380,6 @@ input.invalid {
       grid-template-columns: repeat(1, 1fr);
       column-gap: 155px;
     }
-    /* 
-  .footer-bottom-items {
-    display: none;
-  } */
 
     .footer-bottom__logo {
       margin: 0 auto;
@@ -2402,11 +2428,11 @@ input.invalid {
     .crypto__content-inner::before {
       content: "";
       position: absolute;
-      background-image: url("../images/decor/0-before-768.png");
-      width: 46px;
-      height: 540px;
-      right: 45%;
-      top: 95%;
+      background-image: url("../images/decor/0-before-320.png");
+      width: 360px;
+      height: 545px;
+      right: 55%;
+      top: 93%;
       z-index: 0;
     }
 
@@ -2450,5 +2476,19 @@ input.invalid {
       margin-bottom: 0px;
       padding-left: 2px;
     }
+  }
+  .crypto__ellipse {
+    display: block;
+    content: "";
+    position: absolute;
+    width: 328px;
+    height: 600px;
+    right: 0;
+    top: -239px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    /* align-content: flex-start; */
+    flex-wrap: wrap;
   }
 }
